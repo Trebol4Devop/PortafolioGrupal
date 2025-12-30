@@ -17,7 +17,7 @@ body {
 
 header {
     width: 100%;
-    height: 10vh;
+    height: 8vh;
     display: flex;
     position: fixed;
     padding: 0 3vh;
@@ -92,13 +92,13 @@ header {
 }
 
 #menuNavegacion li a:hover {
-    background-color: #2082e3;
+    background-color: #2d7890;
     color: #363338;
 }
 
 nav {
     width: 40%;
-    height: 10vh;
+    height: 8vh;
     display: flex;
     flex-wrap: wrap;
     z-index: 5;
@@ -113,7 +113,7 @@ nav ul {
 
 nav ul li {
     width: 25%;
-    height: 10vh;
+    height: 8vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -131,7 +131,7 @@ nav ul li a {
 }
 
 nav ul li:hover a {
-    color: #2082e3;
+    color: #2d7890;
     transform: scale(1.05);
 }
 
@@ -146,46 +146,55 @@ nav ul li:hover a {
     bottom: 5vh;
     right: 5vh;
     z-index: 6;
-    background-color: #2082e3;
-    border: #2082e3 2px solid;
-    color: #363338;
-    text-align: center;
+    background: linear-gradient(135deg, #2d7890 0%, #5cc579 100%);
+    border: 2px solid transparent;
+    color: #ffffff;
     border-radius: 100%;
     padding: .60%;
+    text-align: center;
     transition: all .5s ease-in-out;
     cursor: pointer;
+    box-shadow: 0 4px 12px rgba(45, 120, 144, 0.4);
+}
+
+.button_up:hover {
+    transform: translateY(-5px) scale(1.2);
+    background: #ffffff;
+    color: #2d7890;
+    border: 2px solid #5cc579;
+    box-shadow: 0 8px 20px rgba(92, 197, 121, 0.6);
 }
 
 .button_up svg {
     transition: all .5s ease-in-out;
-}
-
-.button_up:hover {
-    transform: scale(1.1);
-    color: #363338;
-    background-color: #f0f0f0;
-    border: #f0f0f0 2px solid;
-    box-shadow: 0px 3px 0px #003a74;
+    fill: currentColor; 
 }
 
 .button_up:hover svg {
-    transform: scale(1.1);
+    transform: scale(1.2);
 }
 
 #button_up {
     opacity: 0;
+    pointer-events: none; 
+    transition: opacity 0.5s ease-in-out;
+}
+
+#button_up.show {
+    opacity: 1;
+    pointer-events: auto;
 }
 
 section {
     width: 100%;
-    height: 90vh;
+    height: 92vh;
     display: flex;
     flex-wrap: wrap;
     position: relative;
-    background-image: url(/assets/images/fondo.jpeg);
+    background-image: url(/assets/images-proyects/fondo.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    top: 10vh;
+    top: 8vh;
 }
 
 section::before {
@@ -194,45 +203,6 @@ section::before {
     height: 100%;
     position: absolute;
     background-color: rgba(73, 72, 72, 0.74);
-}
-
-.decoration {
-    width: 50%;
-    padding: 5%;
-    height: fit-content;
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.down {
-    width: 72%;
-    height: fit-content;
-    position: absolute;
-    z-index: 0;
-}
-
-.i {
-    width: 80%;
-    height: fit-content;
-    position: relative;
-    margin-left:3%;
-    margin-top: -8%;
-}
-
-#i {
-    transition: transform 1s ease-in-out, opacity 0.5s ease-in-out;
-    transform: translateY(-600px);
-    z-index: 1;
-    opacity: 0;
-}
-
-#down {
-    transition: transform 1s ease-in-out, opacity 0.5s ease-in-out;
-    transform: translateY(600px);
-    z-index: 1;
-    opacity: 0;
 }
 
 .aboutMe {
@@ -247,7 +217,6 @@ section::before {
     transition: transform 1s ease-in-out, opacity 0.5s ease-in-out;
     transform: translateX(600px);
     z-index: 1;
-    opacity: 0;
 }
 
 .aboutMe p {
@@ -264,7 +233,7 @@ section::before {
 }
 
 .name {
-    color: #2082e3;
+    color: rgba(92, 197, 121, 0.6);
     margin-left: 1%;
 }
 
@@ -284,9 +253,9 @@ section::before {
 }
 
 .button:hover {
-    background-color: #2082e3;
+    background-color: #2d7890;
     color: #fdfefe;
-    border: #2082e3 solid 2px;
+    border: #2d7890 solid 2px;
 }
 
 .frase {
@@ -325,7 +294,7 @@ section::before {
     justify-content: center;
     align-items: center;
     position: relative;
-    top: 10vh;
+    top: 8vh;
     z-index: 1;
 }
 
@@ -370,7 +339,7 @@ section::before {
 }
 
 .project1 {
-    width: 30%;
+    width: 20%;
     height: 80vh;
     display: flex;
     flex-wrap: wrap;
@@ -446,10 +415,10 @@ section::before {
 }
 
 .button2:hover {
-    background-color: #2082e3;
+    background-color: #2d7890;
     color: #fdfefe;
     transform: scale(1.1);
-    border: #2082e3 solid 2px;
+    border: #2d7890 solid 2px;
 }
 
 .skills {
@@ -462,7 +431,7 @@ section::before {
     padding: 7%;
     padding-left: 30%;
     position: relative;
-    top: 10vh;
+    top: 8vh;
 }
 
 .skills::before {
@@ -514,7 +483,7 @@ section::before {
 }
 
 .skill img:hover {
-    color: #2082e3;
+    color: #2d7890;
     transform: scale(1.2);
 }
 
@@ -532,7 +501,7 @@ section::before {
 }
 
 .icon_svg:hover {
-    fill: #2082e3;
+    fill: #2d7890;
     transform: scale(1.2);
 }
 
@@ -660,13 +629,13 @@ section::before {
 .contact {
     width: 100%;
     height: fit-content;
-    background-color: #2082e3;
+    background-color: #2d7890;
     color: #fdfefe;
     padding: 5%;
     padding-left: 35%;
     position: relative;
     top: 0;
-    margin-top: 10vh;
+    margin-top: 8vh;
 }
 
 .contact h1 {
@@ -716,7 +685,7 @@ section::before {
 .contact-form h1 {
     width: 100%;
     text-align: center;
-    color: #2082e3;
+    color: #2d7890;
 }
 
 .contact-form form {
@@ -763,7 +732,7 @@ section::before {
 
 footer {
     width: 100%;
-    height: 10vh;
+    height: 8vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -939,7 +908,7 @@ footer {
         height: auto;
         min-height: 300px;
         padding: 20px;
-        border: 1px solid #2082e3;
+        border: 1px solid #2d7890;
         background-color: #363338;
         z-index: 100;
     }

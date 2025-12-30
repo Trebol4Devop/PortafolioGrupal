@@ -121,12 +121,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
             if (scrollPos > contactTop && scrollPos < contactBottom) {
                 button_up.style.backgroundColor = '#363338';
-                button_up.style.color = '#2082e3';
+                button_up.style.color = '#363338';
                 button_up.style.border = '2px solid #363338';
             } else {
-                button_up.style.backgroundColor = '#2082e3';
+                button_up.style.backgroundColor = 'rgba(67, 144, 89, 1)';
                 button_up.style.color = '#363338';
-                button_up.style.border = '2px solid #2082e3';
+                button_up.style.border = '2px solid rgba(67, 144, 89, 1)';
             }
         }
     });
