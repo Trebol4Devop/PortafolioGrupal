@@ -1,272 +1,397 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <link rel="icon" type="image/png" href="./assets/images/code.png">
-    <title>Trebol4Devop | Innovation & Code</title>
-</head>
-<body>
-    <header id="header">
-        <div class="contenedor_logo">
-            <h1>Trebol4Devop</h1>
-            <figure class="figure"><img src="./assets/images/code.png" alt="Logo"></figure>
-        </div>
-        <div class="contMenu">
-            <button class="menu" id="menu">
-                <ion-icon class="icono-barras" name="menu-outline"></ion-icon>
-            </button>
-            <ul id="menuNavegacion">
-                <li><a href="#about" class="link">Nosotros</a></li>
-                <li><a href="#team" class="link">Equipo</a></li>
-                <li><a href="#stack" class="link">Stack</a></li>
-                <li><a href="#contact" class="link">Contacto</a></li>
-            </ul>
-        </div>
-        <nav>
-            <ul class="barraNavegacion">
-                <li><a href="#about" class="link">Nosotros</a></li>
-                <li><a href="#team" class="link">Equipo</a></li>
-                <li><a href="#stack" class="link">Stack</a></li>
-                <li><a href="#contact" class="link">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <div id="about"></div>
-    
-    <div class="button_up" id="button_up" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">
-        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-caret-up-fill" viewBox="0 0 16 16">
-            <path d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z"/>
-        </svg>
-    </div>
-    
-    <section id="decoration">
-        <div class="decoration">
-            <img src="./assets/images/figure.png" alt="figure" class="down" id="down">
-            <img src="./assets/images/code2.png" alt="Trebol4Devop" class="i" id="i" style="width: 60%; rotate: 0deg;">
-        </div>
-        <div class="aboutMe" id="aboutMe">
-            <div class="greet">
-                <div>Somos </div>
-                <div class="name">Trebol4Devop</div>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Trebol4Devop | Innovation & Code</title>
+        <meta name="description" content="Trebol4Devop - Equipo de estudiantes USAC especializados en DevOps, desarrollo de software y soluciones escalables.">
+        <meta name="keywords" content="DevOps, Desarrollo de Software, USAC, Trebol4Devop, Automatización, Arquitectura de Software, Open Source, Tecnología, Innovación">
+        <meta name="author" content="Trebol4Devop">
+        <meta name="robots" content="index, follow">
+        <link rel="icon" type="image/png" href="./assets/images/Logo Trébol Asociados_sinFondo.png">
+        <link rel="stylesheet" href="./css/styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    </head>
+    <body>
+        <header id="header">
+            <div class="contenedor_logo">
+                <h1>Trebol4Devop</h1>
+                <figure class="figure"><img src="./assets/images/Logo Trébol Asociados_sinFondo.png" alt="Logo"></figure>
             </div>
-            <p><b>Innovación • Código • Escalabilidad</b></p>
-            <br>
-            <p>
-                Somos un equipo de estudiantes de la <b>Universidad de San Carlos de Guatemala (USAC)</b>. 
-                Nos especializamos en arquitectura de software, automatización y soluciones escalables.
-            </p>
-            <br>
-            <p>Buscamos crear herramientas Open Source y apoyar el desarrollo tecnológico.</p>
-            
-            <div class="frase">
-                <p class="frase_">// team motto</p>
-                <p id="typing"></p>
-                <span id="cursor">|</span>
+            <div class="contMenu">
+                <button class="menu" id="menu">
+                    <ion-icon class="icono-barras" name="menu-outline"></ion-icon>
+                </button>
+                <ul id="menuNavegacion">
+                    <li><a href="#about" class="link">Nosotros</a></li>
+                    <li><a href="#team" class="link">Equipo</a></li>
+                    <li><a href="#stack" class="link">Stack</a></li>
+                    <li><a href="#contact" class="link">Contacto</a></li>
+                </ul>
             </div>
+            <nav>
+                <ul class="barraNavegacion">
+                    <li><a href="#about" class="link">Nosotros</a></li>
+                    <li><a href="#team" class="link">Equipo</a></li>
+                    <li><a href="#stack" class="link">Stack</a></li>
+                    <li><a href="#contact" class="link">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="about"></div>
+        <div class="button_up" id="button_up" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-caret-up-fill" viewBox="0 0 16 16">
+                <path d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z"/>
+            </svg>
         </div>
-    </section>
-    
-    <div class="projects" id="team">
-        <h1>Nuestro Equipo</h1>
-        <div class="project" style="justify-content: center; gap: 2%;">
-            
-            <div class="project1" style="height: auto; min-height: 60vh;">
-                <div class="line"></div>
-                <div class="img_proyect" style="display: flex; justify-content: center; padding-top: 20px;">
-                    <img src="https://github.com/0520Jose.png" alt="José Monzón" style="width: 150px; border-radius: 50%;">
+        <section id="decoration">
+            <div class="aboutMe" id="aboutMe">
+                <div class="greet">
+                    <div>Somos </div>
+                    <div class="name">Trebol4Devop</div>
                 </div>
-                <h2>José Monzón</h2>
-                <p style="text-align: center;">💻 <b>Full Stack</b><br>Desarrollo integral de soluciones web y sistemas.</p>
-                <div class="boton">
-                    <a class="button2" href="https://github.com/0520Jose" target="_blank">GitHub</a>
+                <p><b>Innovación • Código • Escalabilidad</b></p>
+                <br>
+                <p>
+                    Somos un equipo de estudiantes de la <b>Universidad de San Carlos de Guatemala (USAC)</b>. 
+                    Nos especializamos en arquitectura de software, automatización y soluciones escalables.
+                </p>
+                <br>
+                <p>Buscamos crear herramientas Open Source y apoyar el desarrollo tecnológico.</p>
+                
+                <div class="frase">
+                    <p class="frase_">// team motto</p>
+                    <p id="typing"></p>
+                    <span id="cursor">|</span>
                 </div>
             </div>
+        </section>
+        
+        <div class="projects" id="team">
+            <h1>Nuestro Equipo</h1>
+            <div class="project" style="justify-content: center; gap: 2%;">
+                
+                <div class="project1" style="height: auto; min-height: 60vh;">
+                    <div class="line"></div>
+                    <div class="img_proyect" style="display: flex; justify-content: center; padding-top: 20px;">
+                        <img src="https://github.com/0520Jose.png" alt="José Monzón" style="width: 150px; border-radius: 50%;">
+                    </div>
+                    <h2>José Monzón</h2>
+                    <p style="text-align: center;">💻 <b>Full Stack</b><br>Desarrollo integral de soluciones web y sistemas.</p>
+                    <div class="boton">
+                        <a class="button2" href="https://github.com/0520Jose" target="_blank">GitHub</a>
+                    </div>
+                </div>
 
-            <div class="project1" style="height: auto; min-height: 60vh;">
-                <div class="line"></div>
-                <div class="img_proyect" style="display: flex; justify-content: center; padding-top: 20px;">
-                    <img src="https://github.com/DiegVas.png" alt="Diego Vásquez" style="width: 150px; border-radius: 50%;">
+                <div class="project1" style="height: auto; min-height: 60vh;">
+                    <div class="line"></div>
+                    <div class="img_proyect" style="display: flex; justify-content: center; padding-top: 20px;">
+                        <img src="https://github.com/DiegVas.png" alt="Diego Vásquez" style="width: 150px; border-radius: 50%;">
+                    </div>
+                    <h2>Diego Vásquez</h2>
+                    <p style="text-align: center;">🎨 <b>Frontend</b><br>Diseño de interfaces y experiencia de usuario.</p>
+                    <div class="boton">
+                        <a class="button2" href="https://github.com/DiegVas" target="_blank">GitHub</a>
+                    </div>
                 </div>
-                <h2>Diego Vásquez</h2>
-                <p style="text-align: center;">🎨 <b>Frontend</b><br>Diseño de interfaces y experiencia de usuario.</p>
-                <div class="boton">
-                    <a class="button2" href="https://github.com/DiegVas" target="_blank">GitHub</a>
-                </div>
-            </div>
 
-            <div class="project1" style="height: auto; min-height: 60vh;">
-                <div class="line"></div>
-                <div class="img_proyect" style="display: flex; justify-content: center; padding-top: 20px;">
-                    <img src="https://github.com/Carlosdelcid05.png" alt="Carlos del Cid" style="width: 150px; border-radius: 50%;">
+                <div class="project1" style="height: auto; min-height: 60vh;">
+                    <div class="line"></div>
+                    <div class="img_proyect" style="display: flex; justify-content: center; padding-top: 20px;">
+                        <img src="https://github.com/Carlosdelcid05.png" alt="Carlos del Cid" style="width: 150px; border-radius: 50%;">
+                    </div>
+                    <h2>Carlos del Cid</h2>
+                    <p style="text-align: center;">🚀 <b>Backend</b><br>Lógica de servidor y gestión de datos.</p>
+                    <div class="boton">
+                        <a class="button2" href="https://github.com/Carlosdelcid05" target="_blank">GitHub</a>
+                    </div>
                 </div>
-                <h2>Carlos del Cid</h2>
-                <p style="text-align: center;">🚀 <b>Backend</b><br>Lógica de servidor y gestión de datos.</p>
-                <div class="boton">
-                    <a class="button2" href="https://github.com/Carlosdelcid05" target="_blank">GitHub</a>
-                </div>
-            </div>
 
-            <div class="project1" style="height: auto; min-height: 60vh;">
-                <div class="line"></div>
-                <div class="img_proyect" style="display: flex; justify-content: center; padding-top: 20px;">
-                    <img src="https://github.com/Farot3.png" alt="Ottoniel Vásquez" style="width: 150px; border-radius: 50%;">
-                </div>
-                <h2>Ottoniel Vásquez</h2>
-                <p style="text-align: center;">⚙️ <b>DevOps</b><br>Infraestructura, automatización y despliegue.</p>
-                <div class="boton">
-                    <a class="button2" href="https://github.com/Farot3" target="_blank">GitHub</a>
+                <div class="project1" style="height: auto; min-height: 60vh;">
+                    <div class="line"></div>
+                    <div class="img_proyect" style="display: flex; justify-content: center; padding-top: 20px;">
+                        <img src="https://github.com/Farot3.png" alt="Ottoniel Vásquez" style="width: 150px; border-radius: 50%;">
+                    </div>
+                    <h2>Ottoniel Vásquez</h2>
+                    <p style="text-align: center;">⚙️ <b>DevOps</b><br>Infraestructura, automatización y despliegue.</p>
+                    <div class="boton">
+                        <a class="button2" href="https://github.com/Farot3" target="_blank">GitHub</a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    
-    <div class="skills" id="stack">
-        <h1>Tech Stack</h1>
-        <div class="skill">
-            
-            <button type="button" id="showMore1">
-                <img src="https://api.iconify.design/logos:java.svg" class="icon-img" alt="Java">
-                <p class="view">Ver más</p>
-            </button>
-            <div id="hiddenElement1">
-                <button type="button" id="hidden1">✕</button>
-                <h2><img src="https://api.iconify.design/logos:java.svg" alt="Java">Java</h2>
-                <p class="info">Desarrollo robusto de backend y sistemas empresariales.</p>
-            </div>
+        <div class="skills" id="stack">
+            <h1>Tech Stack</h1>
+            <div class="skill">
+                <button type="button" id="showMore1">
+                    <img src="https://cdn.simpleicons.org/html5" class="icon-img" alt="HTML5">
+                    <p class="view">View more</p>
+                </button>
+                <div id="hiddenElement1">
+                    <button type="button" id="hidden1">✕</button>
+                    <h2>
+                        <img src="https://cdn.simpleicons.org/html5" alt="HTML5">
+                        HTML5
+                    </h2>
+                    <p class="info">I have a medium level of proficiency in HTML5. And I'm currently learning more about it. I can create an organized structure for a website with HTML5.</p>
+                </div>
 
-            <button type="button" id="showMore2">
-                <img src="https://cdn.simpleicons.org/python" class="icon-img" alt="Python">
-                <p class="view">Ver más</p>
-            </button>
-            <div id="hiddenElement2">
-                <button type="button" id="hidden2">✕</button>
-                <h2><img src="https://cdn.simpleicons.org/python" alt="Python">Python</h2>
-                <p class="info">Scripting, automatización e inteligencia artificial.</p>
-            </div>
+                <button type="button" id="showMore2">
+                    <img src="https://api.iconify.design/logos:css-3.svg" class="icon-img" alt="CSS3">
+                    <p class="view">View more</p>
+                </button>
+                <div id="hiddenElement2">
+                    <button type="button" id="hidden2">✕</button>
+                    <h2>
+                        <img src="https://api.iconify.design/logos:css-3.svg" alt="CSS3">
+                        CSS3
+                    </h2>
+                    <p class="info">I have a medium level of proficiency in CSS3. And I'm currently learning more about it.</p>
+                </div>
 
-            <button type="button" id="showMore3">
-                <img src="https://api.iconify.design/logos:c-sharp.svg" class="icon-img" alt="C#">
-                <p class="view">Ver más</p>
-            </button>
-            <div id="hiddenElement3">
-                <button type="button" id="hidden3">✕</button>
-                <h2><img src="https://api.iconify.design/logos:c-sharp.svg" alt="C#">C#</h2>
-                <p class="info">Desarrollo de aplicaciones de escritorio y servicios backend.</p>
-            </div>
+                <button type="button" id="showMore3">
+                    <img src="https://cdn.simpleicons.org/javascript" class="icon-img" alt="JavaScript">
+                    <p class="view">View more</p>
+                </button>
+                <div id="hiddenElement3">
+                    <button type="button" id="hidden3">✕</button>
+                    <h2>
+                        <img src="https://cdn.simpleicons.org/javascript" alt="JavaScript">
+                        JavaScript
+                    </h2>
+                    <p class="info">I have a medium level of proficiency in JavaScript. And I'm currently learning more about it.</p>
+                </div>
 
-            <button type="button" id="showMore4">
-                <img src="https://cdn.simpleicons.org/docker" class="icon-img" alt="Docker">
-                <p class="view">Ver más</p>
-            </button>
-            <div id="hiddenElement4">
-                <button type="button" id="hidden4">✕</button>
-                <h2><img src="https://cdn.simpleicons.org/docker" alt="Docker">Docker</h2>
-                <p class="info">Contenerización y despliegue de aplicaciones portables.</p>
-            </div>
+                <button type="button" id="showMore4">
+                    <img src="https://cdn.simpleicons.org/react" class="icon-img" alt="React">
+                    <p class="view">View more</p>
+                </button>
+                <div id="hiddenElement4">
+                    <button type="button" id="hidden4">✕</button>
+                    <h2>
+                        <img src="https://cdn.simpleicons.org/react" alt="React">
+                        React
+                    </h2>
+                    <p class="info">I have a basic level of proficiency in React. And I'm currently learning more about it.</p>
+                </div>
 
-            <button type="button" id="showMore5">
-                <img src="https://api.iconify.design/logos:aws.svg" class="icon-img" alt="AWS">
-                <p class="view">Ver más</p>
-            </button>
-            <div id="hiddenElement5">
-                <button type="button" id="hidden5">✕</button>
-                <h2><img src="https://api.iconify.design/logos:aws.svg" alt="AWS">AWS</h2>
-                <p class="info">Infraestructura en la nube y servicios serverless.</p>
-            </div>
+                <button type="button" id="showMore5">
+                    <img src="https://cdn.simpleicons.org/python" class="icon-img" alt="Python">
+                    <p class="view">View more</p>
+                </button>
+                <div id="hiddenElement5">
+                    <button type="button" id="hidden5">✕</button>
+                    <h2>
+                        <img src="https://cdn.simpleicons.org/python" alt="Python">
+                        Python
+                    </h2>
+                    <p class="info">I have a medium level of proficiency in Python. And I'm currently learning more about it.</p>
+                </div>
 
-            <button type="button" id="showMore6">
-                <img src="https://api.iconify.design/logos:go.svg" class="icon-img" alt="Go">
-                <p class="view">Ver más</p>
-            </button>
-            <div id="hiddenElement6">
-                <button type="button" id="hidden6">✕</button>
-                <h2><img src="https://api.iconify.design/logos:go.svg" alt="Go">Go</h2>
-                <p class="info">Sistemas de alto rendimiento y concurrencia.</p>
-            </div>
+                <button type="button" id="showMore6">
+                    <img src="https://cdn.simpleicons.org/github" class="icon-img" alt="GitHub">
+                    <p class="view">View more</p>
+                </button>
+                <div id="hiddenElement6">
+                    <button type="button" id="hidden6">✕</button>
+                    <h2>
+                        <img src="https://cdn.simpleicons.org/github" alt="GitHub">
+                        GitHub
+                    </h2>
+                    <p class="info">I have a basic level of proficiency in GitHub. And I'm currently learning more about it.</p>
+                </div>
 
-             <button type="button" id="showMore7">
-                <img src="https://cdn.simpleicons.org/arm" class="icon-img" alt="ARM">
-                <p class="view">Ver más</p>
-            </button>
-            <div id="hiddenElement7">
-                <button type="button" id="hidden7">✕</button>
-                <h2><img src="https://cdn.simpleicons.org/arm" alt="ARM">ARM64</h2>
-                <p class="info">Optimización y desarrollo para arquitectura ARM.</p>
-            </div>
+                <button type="button" id="showMore7">
+                    <img src="https://cdn.simpleicons.org/git" class="icon-img" alt="Git">
+                    <p class="view">View more</p>
+                </button>
+                <div id="hiddenElement7">
+                    <button type="button" id="hidden7">✕</button>
+                    <h2>
+                        <img src="https://cdn.simpleicons.org/git" alt="Git">
+                        Git
+                    </h2>
+                    <p class="info">I have a basic level of proficiency in Git. And I'm currently learning more about it.</p>
+                </div>
 
-            <button type="button" id="showMore8">
-                <img src="https://cdn.simpleicons.org/javascript" class="icon-img" alt="JavaScript">
-                <p class="view">Ver más</p>
-            </button>
-            <div id="hiddenElement8">
-                <button type="button" id="hidden8">✕</button>
-                <h2><img src="https://cdn.simpleicons.org/javascript" alt="JavaScript">JavaScript</h2>
-                <p class="info">Desarrollo web interactivo y dinámico.</p>
-            </div>
-            
-            <button type="button" id="showMore9">
-                <img src="https://cdn.simpleicons.org/dart" class="icon-img" alt="Dart">
-                <p class="view">Ver más</p>
-            </button>
-            <div id="hiddenElement9">
-                <button type="button" id="hidden9">✕</button>
-                <h2><img src="https://cdn.simpleicons.org/dart" alt="Dart">Dart</h2>
-                <p class="info">Desarrollo multiplataforma eficiente.</p>
-            </div>
+                <button type="button" id="showMore8">
+                    <img src="https://api.iconify.design/logos:java.svg" class="icon-img" alt="Java">
+                    <p class="view">View more</p>
+                </button>
+                <div id="hiddenElement8">
+                    <button type="button" id="hidden8">✕</button>
+                    <h2>
+                        <img src="https://api.iconify.design/logos:java.svg" alt="Java">
+                        Java
+                    </h2>
+                    <p class="info">I have a basic level of proficiency in Java. And I'm currently learning more about it.</p>
+                </div>
 
-            <button type="button" id="showMore10">
-                <img src="https://cdn.simpleicons.org/git" class="icon-img" alt="Git">
-                <p class="view">Ver más</p>
-            </button>
-            <div id="hiddenElement10">
-                <button type="button" id="hidden10">✕</button>
-                <h2><img src="https://cdn.simpleicons.org/git" alt="Git">Git</h2>
-                <p class="info">Control de versiones y colaboración en equipo.</p>
-            </div>
+                <button type="button" id="showMore9">
+                    <img src="https://api.iconify.design/logos:go.svg" class="icon-img" alt="Go">
+                    <p class="view">View more</p>
+                </button>
+                <div id="hiddenElement9">
+                    <button type="button" id="hidden9">✕</button>
+                    <h2>
+                        <img src="https://api.iconify.design/logos:go.svg" alt="Go">
+                        Go
+                    </h2>
+                    <p class="info">I have a basic level of proficiency in Go. And I'm currently learning more about it.</p>
+                </div>
 
+                <button type="button" id="showMore10">
+                    <img src="https://api.iconify.design/logos:c.svg" class="icon-img" alt="C">
+                    <p class="view">View more</p>
+                </button>
+                <div id="hiddenElement10">
+                    <button type="button" id="hidden10">✕</button>
+                    <h2>
+                        <img src="https://api.iconify.design/logos:c.svg" alt="C">
+                        C
+                    </h2>
+                    <p class="info">I have a basic level of proficiency in C. And I'm currently learning more about it.</p>
+                </div>
+
+                <button type="button" id="showMore11">
+                    <img src="https://api.iconify.design/logos:c-sharp.svg" class="icon-img" alt="C#">
+                    <p class="view">View more</p>
+                </button>
+                <div id="hiddenElement11">
+                    <button type="button" id="hidden11">✕</button>
+                    <h2>
+                        <img src="https://api.iconify.design/logos:c-sharp.svg" alt="C#">
+                        C#
+                    </h2>
+                    <p class="info">I have a basic level of proficiency in C#. And I'm currently learning more about it.</p>
+                </div>
+
+                <button type="button" id="showMore12">
+                    <img src="https://cdn.simpleicons.org/dart" class="icon-img" alt="Dart">
+                    <p class="view">View more</p>
+                </button>
+                <div id="hiddenElement12">
+                    <button type="button" id="hidden12">✕</button>
+                    <h2>
+                        <img src="https://cdn.simpleicons.org/dart" alt="Dart">
+                        Dart
+                    </h2>
+                    <p class="info">I have a basic level of proficiency in Dart. And I'm currently learning more about it.</p>
+                </div>
+
+                <button type="button" id="showMore13">
+                    <img src="https://cdn.simpleicons.org/linux" class="icon-img" alt="Linux">
+                    <p class="view">View more</p>
+                </button>
+                <div id="hiddenElement13">
+                    <button type="button" id="hidden13">✕</button>
+                    <h2>
+                        <img src="https://cdn.simpleicons.org/linux" alt="Linux">
+                        Linux
+                    </h2>
+                    <p class="info">I have a basic level of proficiency in Linux. And I'm currently learning more about it.</p>
+                </div>
+
+                <button type="button" id="showMore14">
+                    <img src="https://unpkg.com/ionicons@5.5.2/dist/svg/hardware-chip-outline.svg" class="icon-img" alt="IoT">
+                    <p class="view">View more</p>
+                </button>
+                <div id="hiddenElement14">
+                    <button type="button" id="hidden14">✕</button>
+                    <h2>
+                        <img src="https://unpkg.com/ionicons@5.5.2/dist/svg/hardware-chip-outline.svg" alt="IoT">
+                        IoT
+                    </h2>
+                    <p class="info">I have a basic level of proficiency in Internet of Things. And I'm currently learning more about it.</p>
+                </div>
+
+                <button type="button" id="showMore15">
+                    <img src="https://api.iconify.design/logos:aws.svg" class="icon-img" alt="AWS">
+                    <p class="view">View more</p>
+                </button>
+                <div id="hiddenElement15">
+                    <button type="button" id="hidden15">✕</button>
+                    <h2>
+                        <img src="https://api.iconify.design/logos:aws.svg" alt="AWS">
+                        AWS
+                    </h2>
+                    <p class="info">I have a basic level of proficiency in AWS. And I'm currently learning more about it.</p>
+                </div>
+
+                <button type="button" id="showMore16">
+                    <img src="https://cdn.simpleicons.org/obsidian" class="icon-img" alt="Obsidian">
+                    <p class="view">View more</p>
+                </button>
+                <div id="hiddenElement16">
+                    <button type="button" id="hidden16">✕</button>
+                    <h2>
+                        <img src="https://cdn.simpleicons.org/obsidian" alt="Obsidian">
+                        Obsidian
+                    </h2>
+                    <p class="info">I have a basic level of proficiency in Obsidian. And I'm currently learning more about it.</p>
+                </div>
+
+                <button type="button" id="showMore17">
+                    <img src="https://cdn.simpleicons.org/arm" class="icon-img" alt="ARM">
+                    <p class="view">View more</p>
+                </button>
+                <div id="hiddenElement17">
+                    <button type="button" id="hidden17">✕</button>
+                    <h2>
+                        <img src="https://cdn.simpleicons.org/arm" alt="ARM">
+                        ARM64
+                    </h2>
+                    <p class="info">I have a basic level of proficiency in ARM64 architecture. And I'm currently learning more about it.</p>
+                </div>
+
+                <button type="button" id="showMore18">
+                    <img src="https://cdn.simpleicons.org/netlify" class="icon-img" alt="Netlify">
+                    <p class="view">View more</p>
+                </button>
+                <div id="hiddenElement18">
+                    <button type="button" id="hidden18">✕</button>
+                    <h2>
+                        <img src="https://cdn.simpleicons.org/netlify" alt="Netlify">
+                        Netlify
+                    </h2>
+                    <p class="info">I have a basic level of proficiency in Netlify. And I'm currently learning more about it.</p>
+                </div>
+            </div>
+            <div class="run">
+                <p id="run">.</p>
+                <img src="./assets/images/dino.png" alt="Dino" id="dino">
+            </div>
         </div>
-        <div class="run">
-            <p id="run">.</p>
-            <img src="./assets/images/dino.png" alt="Dino" id="dino">
-        </div>
-    </div>
-    
-    <div class="contact" id="contact">
-        <div>
-            <h1>Contacto & Apoyo</h1>
-            <div class="icons">
-                <a href="mailto:trebol4devop@proton.me" target="_blank"><ion-icon name="mail-outline" class="icon"></ion-icon></a>
-                <a href="https://github.com/trebol4devop" target="_blank"><ion-icon name="logo-github" class="icon"></ion-icon></a>
-                <a href="https://www.paypal.me/TrebolDevop" target="_blank"><ion-icon name="logo-paypal" class="icon"></ion-icon></a>
-                <a href="https://buymeacoffee.com/trebol4devop" target="_blank"><ion-icon name="cafe-outline" class="icon"></ion-icon></a>
-            </div>
-            
-            <div class="contact-form">
-                <h1>Escríbenos</h1>
-                <form action="https://formspree.io/f/xbljyvql" method="POST">
-                    <label for="name">Nombre o Compañía<p> *</p></label>
-                    <input type="text" name="name" placeholder="Tu nombre" required>
-                    <label for="email">Email<p> *</p></label>
-                    <input type="email" name="email" placeholder="tucorreo@ejemplo.com" required>
-                    <label for="message">Mensaje<p> *</p></label>
-                    <textarea name="message" placeholder="Cuéntanos en qué podemos colaborar" required></textarea>
-                    <button type="submit" class="button">Enviar Mensaje</button>
-                </form>
+        <div class="contact" id="contact">
+            <div>
+                <h1>Contacto y apoyo</h1>
+                <div class="icons">
+                    <a href="mailto:trebol4devop@proton.me" target="_blank"><ion-icon name="mail-outline" class="icon"></ion-icon></a>
+                    <a href="https://github.com/trebol4devop" target="_blank"><ion-icon name="logo-github" class="icon"></ion-icon></a>
+                    <a href="https://www.paypal.me/TrebolDevop" target="_blank"><ion-icon name="logo-paypal" class="icon"></ion-icon></a>
+                    <a href="https://buymeacoffee.com/trebol4devop" target="_blank"><ion-icon name="cafe-outline" class="icon"></ion-icon></a>
+                </div>
+                
+                <div class="contact-form">
+                    <h1>Escríbenos</h1>
+                    <form action="https://formspree.io/f/xbdjevkz" method="POST">
+                        <label for="name">Nombre o Compañía<p> *</p></label>
+                        <input type="text" name="name" placeholder="Tu nombre" required>
+                        <label for="email">Email<p> *</p></label>
+                        <input type="email" name="email" placeholder="tucorreo@ejemplo.com" required>
+                        <label for="message">Mensaje<p> *</p></label>
+                        <textarea name="message" placeholder="Cuéntanos en qué podemos colaborar" required></textarea>
+                        <button type="submit" class="button">Enviar Mensaje</button>
+                    </form>
+                </div>
             </div>
         </div>
-    </div>
-    
-    <footer>
-        <p>© 2025 Trebol4Devop. Estudiantes USAC.</p>
-    </footer>
-    
-    <script src="./js/main.js"></script>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-</body>
+        <footer>
+            <p>&copy; 2025 - Trebol4Devop</p>
+        </footer>
+        <script src="./js/main.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    </body>
 </html>
