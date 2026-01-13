@@ -3,8 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const hiddenElements = [];
     const hiddenElements2 = [];
 
-    // Ajustado a 10 elementos que pusimos en el HTML (puedes subirlo si agregas más iconos)
-    for (let i = 1; i <= 10; i++) {
+    for (let i = 1; i <= 18; i++) {
         showMoreButtons.push(document.getElementById(`showMore${i}`));
         hiddenElements.push(document.getElementById(`hiddenElement${i}`));
         hiddenElements2.push(document.getElementById(`hidden${i}`));
@@ -12,14 +11,25 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const closeElement = (element) => {
         if (!element) return;
-        element.style.transition = 'left 0.5s ease';
-        element.style.left = '0';
         
-        setTimeout(() => {
-            element.style.display = 'none';
-            element.style.transition = '';
-            element.style.left = '';
-        }, 500);
+        if (window.innerWidth <= 768) {
+            element.style.transition = 'opacity 0.5s ease';
+            element.style.opacity = '0';
+            setTimeout(() => {
+                element.style.display = 'none';
+                element.style.transition = '';
+                element.style.opacity = '';
+            }, 500);
+        } else {
+            element.style.transition = 'left 0.5s ease';
+            element.style.left = '0';
+            
+            setTimeout(() => {
+                element.style.display = 'none';
+                element.style.transition = '';
+                element.style.left = '';
+            }, 500);
+        }
     };
 
     hiddenElements2.forEach((button2, index) => {
@@ -35,7 +45,6 @@ document.addEventListener('DOMContentLoaded', () => {
         if (button && hiddenElements[index]) {
             button.addEventListener('click', (e) => {
                 e.stopPropagation();
-                // Cerrar otros
                 hiddenElements.forEach((el, i) => {
                     if (i !== index && el.style.display === 'block') {
                          closeElement(el);
@@ -47,9 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     closeElement(element);
                 } else {
                     element.style.display = 'block';
-                    element.style.transition = 'none';
-                    element.style.left = '0';
-
+                    
                     const container = element.offsetParent || document.body;
                     const elementHeight = element.offsetHeight;
                     const containerHeight = container.clientHeight;
@@ -61,16 +68,26 @@ document.addEventListener('DOMContentLoaded', () => {
 
                     element.style.top = `${topPosition}px`;
 
-                    setTimeout(() => {
-                        element.style.transition = 'left 0.5s ease';
-                        element.style.left = '-65%';
-                    }, 10);
+                    if (window.innerWidth <= 768) {
+                        element.style.transition = 'none';
+                        element.style.opacity = '0';
+                        setTimeout(() => {
+                            element.style.transition = 'opacity 0.5s ease';
+                            element.style.opacity = '1';
+                        }, 10);
+                    } else {
+                        element.style.transition = 'none';
+                        element.style.left = '0';
+                        setTimeout(() => {
+                            element.style.transition = 'left 0.5s ease';
+                            element.style.left = '-65%';
+                        }, 10);
+                    }
                 }
             });
         }
     });
 
-    // Cerrar al hacer clic fuera
     document.addEventListener('click', (event) => {
         hiddenElements.forEach((element, index) => {
             if (element && element.style.display === 'block') {
@@ -83,7 +100,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Header scroll effect
     let lastScrollY = window.scrollY;
     const header = document.getElementById('header');
     document.addEventListener('scroll', () => {
@@ -96,7 +112,6 @@ document.addEventListener('DOMContentLoaded', () => {
         lastScrollY = currentScrollY;
     });
 
-    // Button UP & Header position
     const button_up = document.getElementById('button_up');
     const contact = document.getElementById('contact');
 
@@ -104,9 +119,9 @@ document.addEventListener('DOMContentLoaded', () => {
         const scrollPos = window.scrollY;
 
         if (scrollPos > 100) {
-            button_up.style.opacity = '1';
+            button_up.classList.add('show');
         } else {
-            button_up.style.opacity = '0';
+            button_up.classList.remove('show');
         }
 
         if (scrollPos > 0) {
@@ -131,7 +146,14 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Animación de entrada
+    if (button_up) {
+        button_up.removeAttribute('onclick');
+        button_up.addEventListener('click', (e) => {
+            e.preventDefault();
+            smoothScroll(0, 1500);
+        });
+    }
+    
     const i = document.getElementById('i');
     const down = document.getElementById('down');
     const aboutMe = document.getElementById('aboutMe');
@@ -141,14 +163,13 @@ document.addEventListener('DOMContentLoaded', () => {
             i.style.transform = 'translateY(0)';
             down.style.transform = 'translateY(0)';
         }, 300);
-        // ...resto de animaciones de opacidad (igual al original)
         setTimeout(() => { i.style.opacity = 1; down.style.opacity = 1; }, 1100);
         setTimeout(() => { aboutMe.style.transform = 'translateY(0)'; aboutMe.style.opacity = 1; }, 1300);
     }
 
-    // Menú móvil
     const menu = document.getElementById('menu');
     const menuNavegacion = document.getElementById('menuNavegacion');
+    
     if (menu && menuNavegacion) {
         menu.addEventListener('click', (e) => {
             e.stopPropagation();
@@ -160,9 +181,48 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
+
+    const ease = (t, b, c, d) => {
+        t /= d / 2;
+        if (t < 1) return c / 2 * t * t * t + b;
+        t -= 2;
+        return c / 2 * (t * t * t + 2) + b;
+    };
+
+    const smoothScroll = (targetPosition, duration) => {
+        const startPosition = window.scrollY;
+        const distance = targetPosition - startPosition;
+        let startTime = null;
+
+        const animation = (currentTime) => {
+            if (startTime === null) startTime = currentTime;
+            const timeElapsed = currentTime - startTime;
+            const run = ease(timeElapsed, startPosition, distance, duration);
+            window.scrollTo(0, run);
+            if (timeElapsed < duration) requestAnimationFrame(animation);
+        };
+        requestAnimationFrame(animation);
+    };
+
+    const links = document.querySelectorAll('a[href^="#"]');
+    links.forEach(link => {
+        link.addEventListener('click', (e) => {
+            e.preventDefault();
+            const targetId = link.getAttribute('href');
+            if (targetId === '#') return;
+            const target = document.querySelector(targetId);
+            if (target) {
+                const headerOffset = window.innerHeight * 0.08;
+                const targetPosition = target.getBoundingClientRect().top + window.scrollY - headerOffset;
+                smoothScroll(targetPosition, 1500);
+            }
+            if (menuNavegacion && menuNavegacion.style.display === 'block') {
+                menuNavegacion.style.display = 'none';
+            }
+        });
+    });
 });
 
-// Animación de texto tipo máquina de escribir adaptada para el grupo
 const text = `if (team.hasPassion()) { 
     create(); 
     innovate(); 
@@ -176,7 +236,7 @@ function type() {
     if (index < text.length) {
         typingElement.innerHTML += text.charAt(index);
         index++;
-        setTimeout(type, 150); // Un poco más rápido
+        setTimeout(type, 150);
     } else {
         setTimeout(() => {
             typingElement.innerHTML = '';
@@ -186,17 +246,25 @@ function type() {
     }
 }
 
-// Animación del Dino (corrección de ancho de pantalla)
 let text2 = "";
+
 function checkScreenSize() {
-    if (window.innerWidth < 768) {
-        text2 = ".".repeat(30);
-    } else if (window.innerWidth < 1024) {
-        text2 = ".".repeat(35);
-    } else {
-        text2 = ".".repeat(148);
-    }
+    const container = document.getElementById('stack');
+    if (!container) return;
+    
+    const style = window.getComputedStyle(container);
+    const paddingLeft = parseFloat(style.paddingLeft);
+    const paddingRight = parseFloat(style.paddingRight);
+    
+    const dinoWidth = 40; 
+    const availableWidth = container.clientWidth - paddingLeft - paddingRight - dinoWidth;
+    
+    const charWidth = 8.15; 
+    
+    const count = Math.floor(availableWidth / charWidth);
+    text2 = ".".repeat(Math.max(0, count));
 }
+
 window.addEventListener('resize', checkScreenSize);
 checkScreenSize();
 

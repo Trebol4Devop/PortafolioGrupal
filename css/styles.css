@@ -1,3 +1,4 @@
+/*General*/
 * {
     margin: 0;
     border: 0;
@@ -15,6 +16,7 @@ body {
     overflow-x: hidden;
 }
 
+/*Header*/
 header {
     width: 100%;
     height: 8vh;
@@ -135,6 +137,8 @@ nav ul li:hover a {
     transform: scale(1.05);
 }
 
+/*Button Up*/
+
 .button_up {
     width: 50px;
     height: 50px;
@@ -157,22 +161,12 @@ nav ul li:hover a {
     box-shadow: 0 4px 12px rgba(45, 120, 144, 0.4);
 }
 
-.button_up:hover {
-    transform: translateY(-5px) scale(1.2);
-    background: #ffffff;
-    color: #2d7890;
-    border: 2px solid #5cc579;
-    box-shadow: 0 8px 20px rgba(92, 197, 121, 0.6);
-}
 
 .button_up svg {
     transition: all .5s ease-in-out;
     fill: currentColor; 
 }
 
-.button_up:hover svg {
-    transform: scale(1.2);
-}
 
 #button_up {
     opacity: 0;
@@ -184,6 +178,8 @@ nav ul li:hover a {
     opacity: 1;
     pointer-events: auto;
 }
+
+/*Section About Me*/
 
 section {
     width: 100%;
@@ -282,6 +278,8 @@ section::before {
     display: inline-block;
     animation: blink 1s step-end infinite;
 }
+
+/*Section Projects*/
 
 .projects {
     width: 100%;
@@ -421,6 +419,8 @@ section::before {
     border: #2d7890 solid 2px;
 }
 
+/*Section Skills*/
+
 .skills {
     width: 100%;
     height: fit-content;
@@ -527,7 +527,7 @@ section::before {
     left: -65%;
     justify-content: center;
     text-align: center;
-    background-color: #2592ff5e;
+    background-color: #2592ffd5;
     padding: 10%;
     padding-right: 20%;
     border-radius: 10px;
@@ -626,16 +626,25 @@ section::before {
     animation: animado 1s linear infinite;
 }
 
+/*Section Contact*/
+
 .contact {
     width: 100%;
     height: fit-content;
     background-color: #2d7890;
     color: #fdfefe;
-    padding: 5%;
-    padding-left: 35%;
+    padding: 2%;
     position: relative;
     top: 0;
     margin-top: 8vh;
+    display: flex;
+}
+
+.contact-cont {
+    /* background-color: #303030; */
+    width: 100%;
+    display: flex;
+    align-items: center;
 }
 
 .contact h1 {
@@ -671,15 +680,25 @@ section::before {
 }
 
 .contact-form {
-    width: 100%;
-    height: fit-content;
+    width: 50%;
+    height: 90%;
     padding: 5%;
     background-color: #f0f0f0;
-    margin-top: 5%;
-    margin-left: -26.5%;
     border-radius: 15px;
     text-align: center;
     color: #363338;
+}
+
+.contact-info {
+    /* background-color: #5cc579; */
+    width: 50%;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .contact-form h1 {
@@ -718,7 +737,7 @@ section::before {
 .contact-form textarea {
     margin-top: 1%;
     width: 100%;
-    height: 30vh;
+    height: 15vh;
     resize: none;
     padding: 2%;
     box-shadow: #c1c0c1 1px 1px 3px;
@@ -741,6 +760,8 @@ footer {
     color: #fdfefe;
     position: relative;
 }
+
+/*Animations*/
 
 @keyframes blink {
     0%, 100% {
@@ -774,6 +795,8 @@ footer {
         transform: translateY(0);
     }
 }
+
+/*Responsive Design*/
 
 @media screen and (max-width: 1200px) {
     .skills, .contact {
@@ -944,7 +967,7 @@ footer {
 
     #typing {
         width: 100%;
-        text-align: left;
+        text-align: right;
     }
 
     section {
@@ -957,11 +980,6 @@ footer {
 
     .decoration {
         height: auto;
-    }
-    
-    .name {
-        display: block;
-        width: 100%;
     }
 
     .skills {
@@ -999,6 +1017,7 @@ footer {
         left: 2% !important;
         top: 100px;
         padding: 15px;
+        transform: translateZ(10px) !important;
     }
     
     [id^="hiddenElement"] h2 {
@@ -1007,6 +1026,20 @@ footer {
     
     [id^="hiddenElement"] p {
         font-size: 14px;
+    }
+
+    .contact {
+        flex-direction: column;
+        margin-top: 6vh;
+    }
+
+    .contact-cont {
+        flex-direction: column;
+    }
+
+    .contact-info, .contact-form {
+        width: 100%;
+        margin-bottom: 20px;
     }
 
     .contact-form input, .contact-form textarea {
@@ -1019,8 +1052,8 @@ footer {
     }
 
     .button_up {
-        bottom: 15px;
-        right: 15px;
+        bottom: 40px;
+        right: 10px;
         width: 45px;
         height: 45px;
         opacity: 0.8;
@@ -1035,6 +1068,16 @@ footer {
     footer p {
         font-size: 12px;
     }
+
+    footer {
+        height: 8vh;
+    }
+
+    #aboutMe {
+        transform: translateX(0);
+    }
+
+    
 }
 
 @media screen and (max-width: 320px) {
@@ -1049,19 +1092,19 @@ footer {
     .figure {
         width: 40px;
     }
-}
 
-/* Añadir al final de css/styles.css */
-.project {
-    justify-content: center; 
-    gap: 20px;
-}
-.project1 {
-    /* Ajuste para que las tarjetas de equipo no sean tan altas si tienen poco texto */
-    height: auto;
-    padding-bottom: 20px;
-}
-.project1 img {
-    /* Asegurar que las fotos de perfil se vean bien */
-    object-fit: cover;
+    .contact {
+        flex-direction: column;
+        margin-top: 6vh;
+    }
+
+    .contact-cont {
+        flex-direction: column;
+    }
+
+    .contact-info, .contact-form {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
 }
