@@ -3,10 +3,16 @@ document.addEventListener('DOMContentLoaded', () => {
     const hiddenElements = [];
     const hiddenElements2 = [];
 
-    for (let i = 1; i <= 18; i++) {
-        showMoreButtons.push(document.getElementById(`showMore${i}`));
-        hiddenElements.push(document.getElementById(`hiddenElement${i}`));
-        hiddenElements2.push(document.getElementById(`hidden${i}`));
+    for (let i = 1; i <= 27; i++) {
+        const btn = document.getElementById(`showMore${i}`);
+        const element = document.getElementById(`hiddenElement${i}`);
+        const closeBtn = document.getElementById(`hidden${i}`);
+        
+        if (btn && element && closeBtn) {
+            showMoreButtons.push(btn);
+            hiddenElements.push(element);
+            hiddenElements2.push(closeBtn);
+        }
     }
 
     const closeElement = (element) => {
@@ -154,16 +160,8 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
     
-    const i = document.getElementById('i');
-    const down = document.getElementById('down');
     const aboutMe = document.getElementById('aboutMe');
-    
-    if (i && down && aboutMe) {
-        setTimeout(() => {
-            i.style.transform = 'translateY(0)';
-            down.style.transform = 'translateY(0)';
-        }, 300);
-        setTimeout(() => { i.style.opacity = 1; down.style.opacity = 1; }, 1100);
+    if (aboutMe) {
         setTimeout(() => { aboutMe.style.transform = 'translateY(0)'; aboutMe.style.opacity = 1; }, 1300);
     }
 
