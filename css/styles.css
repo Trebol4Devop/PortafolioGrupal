@@ -1,4 +1,3 @@
-/*General*/
 * {
     margin: 0;
     border: 0;
@@ -16,7 +15,6 @@ body {
     overflow-x: hidden;
 }
 
-/*Header*/
 header {
     width: 100%;
     height: 8vh;
@@ -137,8 +135,6 @@ nav ul li:hover a {
     transform: scale(1.05);
 }
 
-/*Button Up*/
-
 .button_up {
     width: 50px;
     height: 50px;
@@ -178,8 +174,6 @@ nav ul li:hover a {
     opacity: 1;
     pointer-events: auto;
 }
-
-/*Section About Me*/
 
 section {
     width: 100%;
@@ -278,8 +272,6 @@ section::before {
     display: inline-block;
     animation: blink 1s step-end infinite;
 }
-
-/*Section Projects*/
 
 .projects {
     width: 100%;
@@ -493,8 +485,6 @@ section::before {
     border: #2d7890 solid 2px;
 }
 
-/*Section Skills*/
-
 .skills {
     width: 100%;
     height: fit-content;
@@ -705,8 +695,6 @@ section::before {
     animation: animado 1s linear infinite;
 }
 
-/*Section Contact*/
-
 .contact {
     width: 100%;
     height: fit-content;
@@ -720,7 +708,6 @@ section::before {
 }
 
 .contact-cont {
-    /* background-color: #303030; */
     width: 100%;
     display: flex;
     align-items: center;
@@ -769,7 +756,6 @@ section::before {
 }
 
 .contact-info {
-    /* background-color: #5cc579; */
     width: 50%;
     display: block;
     justify-content: center;
@@ -840,8 +826,6 @@ footer {
     position: relative;
 }
 
-/*Animations*/
-
 @keyframes blink {
     0%, 100% {
         opacity: 1;
@@ -874,8 +858,6 @@ footer {
         transform: translateY(0);
     }
 }
-
-/*Responsive Design*/
 
 @media screen and (max-width: 1200px) {
     .skills, .contact {
@@ -1004,9 +986,14 @@ footer {
         width: 30%;
     }
 
-    [id^="hiddenElement"] {
-        width: 90% !important;
-        left: 5% !important;
+    #hiddenElement1, #hiddenElement2, #hiddenElement3, #hiddenElement4, #hiddenElement5, 
+    #hiddenElement6, #hiddenElement7, #hiddenElement8, #hiddenElement9,
+    #hiddenElement10, #hiddenElement11, #hiddenElement12, #hiddenElement13, #hiddenElement14, 
+    #hiddenElement15, #hiddenElement16, #hiddenElement17, #hiddenElement18,
+    #hiddenElement19, #hiddenElement20, #hiddenElement21, #hiddenElement22, #hiddenElement23,
+    #hiddenElement24, #hiddenElement25, #hiddenElement26, #hiddenElement27 {
+        width: 90%;
+        left: 5%;
         height: auto;
         min-height: 300px;
         padding: 20px;
@@ -1091,12 +1078,17 @@ footer {
         font-size: 50px;
     }
 
-    [id^="hiddenElement"] {
-        width: 96% !important;
-        left: 2% !important;
+    #hiddenElement1, #hiddenElement2, #hiddenElement3, #hiddenElement4, #hiddenElement5, 
+    #hiddenElement6, #hiddenElement7, #hiddenElement8, #hiddenElement9,
+    #hiddenElement10, #hiddenElement11, #hiddenElement12, #hiddenElement13, #hiddenElement14, 
+    #hiddenElement15, #hiddenElement16, #hiddenElement17, #hiddenElement18,
+    #hiddenElement19, #hiddenElement20, #hiddenElement21, #hiddenElement22, #hiddenElement23,
+    #hiddenElement24, #hiddenElement25, #hiddenElement26, #hiddenElement27 {
+        width: 96%;
+        left: 2%;
         top: 100px;
         padding: 15px;
-        transform: translateZ(10px) !important;
+        transform: translateZ(10px);
     }
     
     [id^="hiddenElement"] h2 {
@@ -1155,8 +1147,6 @@ footer {
     #aboutMe {
         transform: translateX(0);
     }
-
-    
 }
 
 @media screen and (max-width: 320px) {
@@ -1185,5 +1175,4 @@ footer {
         width: 100%;
         margin-bottom: 20px;
     }
-
 }
