@@ -1,4 +1,3 @@
-/*General*/
 * {
     margin: 0;
     border: 0;
@@ -16,7 +15,6 @@ body {
     overflow-x: hidden;
 }
 
-/*Header*/
 header {
     width: 100%;
     height: 8vh;
@@ -137,8 +135,6 @@ nav ul li:hover a {
     transform: scale(1.05);
 }
 
-/*Button Up*/
-
 .button_up {
     width: 50px;
     height: 50px;
@@ -178,8 +174,6 @@ nav ul li:hover a {
     opacity: 1;
     pointer-events: auto;
 }
-
-/*Section About Me*/
 
 section {
     width: 100%;
@@ -259,7 +253,7 @@ section::before {
     height: fit-content;
     padding: 8%;
     margin-top: 5%;
-    margin-left: 12%;
+    margin-left: 100%;
     font-size: 30px;
 }
 
@@ -279,8 +273,6 @@ section::before {
     animation: blink 1s step-end infinite;
 }
 
-/*Section Projects*/
-
 .projects {
     width: 100%;
     height: fit-content;
@@ -294,6 +286,32 @@ section::before {
     position: relative;
     top: 8vh;
     z-index: 1;
+}
+
+.projects1 {
+    width: 100%;
+    height: fit-content;
+    background-image: url(/assets/images/Banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #363338;
+    padding: 10%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 8vh;
+    z-index: 1;
+}
+
+.projects1::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color:#f0f0f09f;
+    z-index: 0;
 }
 
 .projects::before {
@@ -316,6 +334,17 @@ section::before {
 }
 
 .projects h1 {
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 5%;
+    z-index: 3;
+    position: relative;
+    color: #303030;
+}
+
+.projects1 h1 {
     width: 100%;
     height: fit-content;
     text-align: center;
@@ -351,11 +380,34 @@ section::before {
     transition: all 0.5s ease-in-out;
 }
 
+.project2 {
+    width: 25%;
+    height: 80vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    box-shadow: #a4a3a4 0px 0px 10px;
+    background-color: #ffffff;
+    border-radius: 0 0 10px 10px;
+    margin-bottom: 5%;
+    position: relative;
+    text-align: justify;
+    transition: all 0.5s ease-in-out;
+}
+
 .project1:hover {
     box-shadow: #747474 0 0 10px;
 }
 
 .project1:hover img{
+    transform: scale(120%);
+}
+
+.project2:hover {
+    box-shadow: #747474 0 0 10px;
+}
+
+.project2:hover img{
     transform: scale(120%);
 }
 
@@ -369,10 +421,13 @@ section::before {
     width: 100%;
     height: fit-content;
     overflow: hidden;
+    justify-content: center;
+    display: flex;
+    align-items: center;
 }
 
 .img_proyect img {
-    width: 100%;
+    width: 80%;
     height: fit-content;
     transition: all 0.5s ease-in-out;
 }
@@ -386,6 +441,17 @@ section::before {
 
 .project1 p {
     padding: 5%;
+}
+
+.project2 h2 {
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+    padding: 8%;
+}
+
+.project2 p {
+    padding: 8%;
 }
 
 .boton {
@@ -418,8 +484,6 @@ section::before {
     transform: scale(1.1);
     border: #2d7890 solid 2px;
 }
-
-/*Section Skills*/
 
 .skills {
     width: 100%;
@@ -518,7 +582,9 @@ section::before {
 #hiddenElement1, #hiddenElement2, #hiddenElement3, #hiddenElement4, #hiddenElement5, 
 #hiddenElement6, #hiddenElement7, #hiddenElement8, #hiddenElement9,
 #hiddenElement10, #hiddenElement11, #hiddenElement12, #hiddenElement13, #hiddenElement14, 
-#hiddenElement15, #hiddenElement16, #hiddenElement17, #hiddenElement18 {
+#hiddenElement15, #hiddenElement16, #hiddenElement17, #hiddenElement18,
+#hiddenElement19, #hiddenElement20, #hiddenElement21, #hiddenElement22, #hiddenElement23,
+#hiddenElement24, #hiddenElement25, #hiddenElement26, #hiddenElement27 {
     width: 70%;
     height: 55vh;
     display: none;
@@ -537,7 +603,8 @@ section::before {
 
 #hidden1, #hidden2, #hidden3, #hidden4, #hidden5, #hidden6, #hidden7, #hidden8, #hidden9,
 #hidden10, #hidden11, #hidden12, #hidden13, #hidden14, 
-#hidden15, #hidden16, #hidden17, #hidden18{
+#hidden15, #hidden16, #hidden17, #hidden18, #hidden19, #hidden20, #hidden21, 
+#hidden22, #hidden23, #hidden24, #hidden25, #hidden26, #hidden27 {
     width: 40px;
     height: 40px;
     justify-content: center;
@@ -556,7 +623,9 @@ section::before {
 #hidden1:hover, #hidden2:hover, #hidden3:hover, #hidden4:hover, #hidden5:hover, 
 #hidden6:hover, #hidden7:hover, #hidden8:hover, #hidden9:hover,
 #hidden10:hover, #hidden11:hover, #hidden12:hover, #hidden13:hover, #hidden14:hover, 
-#hidden15:hover, #hidden16:hover, #hidden17:hover, #hidden18:hover {
+#hidden15:hover, #hidden16:hover, #hidden17:hover, #hidden18:hover,
+#hidden19:hover, #hidden20:hover, #hidden21:hover, #hidden22:hover, #hidden23:hover,
+#hidden24:hover, #hidden25:hover, #hidden26:hover, #hidden27:hover {
     transform: scale(1.5);
 }
 
@@ -626,8 +695,6 @@ section::before {
     animation: animado 1s linear infinite;
 }
 
-/*Section Contact*/
-
 .contact {
     width: 100%;
     height: fit-content;
@@ -641,7 +708,6 @@ section::before {
 }
 
 .contact-cont {
-    /* background-color: #303030; */
     width: 100%;
     display: flex;
     align-items: center;
@@ -690,7 +756,6 @@ section::before {
 }
 
 .contact-info {
-    /* background-color: #5cc579; */
     width: 50%;
     display: block;
     justify-content: center;
@@ -761,8 +826,6 @@ footer {
     position: relative;
 }
 
-/*Animations*/
-
 @keyframes blink {
     0%, 100% {
         opacity: 1;
@@ -795,8 +858,6 @@ footer {
         transform: translateY(0);
     }
 }
-
-/*Responsive Design*/
 
 @media screen and (max-width: 1200px) {
     .skills, .contact {
@@ -925,9 +986,14 @@ footer {
         width: 30%;
     }
 
-    [id^="hiddenElement"] {
-        width: 90% !important;
-        left: 5% !important;
+    #hiddenElement1, #hiddenElement2, #hiddenElement3, #hiddenElement4, #hiddenElement5, 
+    #hiddenElement6, #hiddenElement7, #hiddenElement8, #hiddenElement9,
+    #hiddenElement10, #hiddenElement11, #hiddenElement12, #hiddenElement13, #hiddenElement14, 
+    #hiddenElement15, #hiddenElement16, #hiddenElement17, #hiddenElement18,
+    #hiddenElement19, #hiddenElement20, #hiddenElement21, #hiddenElement22, #hiddenElement23,
+    #hiddenElement24, #hiddenElement25, #hiddenElement26, #hiddenElement27 {
+        width: 90%;
+        left: 5%;
         height: auto;
         min-height: 300px;
         padding: 20px;
@@ -1012,12 +1078,17 @@ footer {
         font-size: 50px;
     }
 
-    [id^="hiddenElement"] {
-        width: 96% !important;
-        left: 2% !important;
+    #hiddenElement1, #hiddenElement2, #hiddenElement3, #hiddenElement4, #hiddenElement5, 
+    #hiddenElement6, #hiddenElement7, #hiddenElement8, #hiddenElement9,
+    #hiddenElement10, #hiddenElement11, #hiddenElement12, #hiddenElement13, #hiddenElement14, 
+    #hiddenElement15, #hiddenElement16, #hiddenElement17, #hiddenElement18,
+    #hiddenElement19, #hiddenElement20, #hiddenElement21, #hiddenElement22, #hiddenElement23,
+    #hiddenElement24, #hiddenElement25, #hiddenElement26, #hiddenElement27 {
+        width: 96%;
+        left: 2%;
         top: 100px;
         padding: 15px;
-        transform: translateZ(10px) !important;
+        transform: translateZ(10px);
     }
     
     [id^="hiddenElement"] h2 {
@@ -1076,8 +1147,6 @@ footer {
     #aboutMe {
         transform: translateX(0);
     }
-
-    
 }
 
 @media screen and (max-width: 320px) {
@@ -1106,5 +1175,4 @@ footer {
         width: 100%;
         margin-bottom: 20px;
     }
-
 }
