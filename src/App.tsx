@@ -24,11 +24,11 @@ export default function App() {
       </Section>
       
       <Section id="about">
-        <div className="max-w-3xl mb-24">
-          <h2 className="text-4xl md:text-5xl font-bold mb-12">
+        <div className="max-w-3xl mb-16 md:mb-24">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-8 md:mb-12">
             Independent focus on <span className="text-brand-primary italic">excellence</span>.
           </h2>
-          <div className="space-y-6 text-neutral-400 text-lg leading-relaxed">
+          <div className="space-y-4 md:space-y-6 text-neutral-400 text-base md:text-lg leading-relaxed">
             <p>
               Born from the University of San Carlos de Guatemala (USAC), Trébol4Devop
               is a collective of engineers dedicated to the science of software delivery.
@@ -44,7 +44,7 @@ export default function App() {
           </div>
         </div>
 
-        <div className="relative w-screen left-1/2 -translate-x-1/2 h-32 overflow-hidden flex items-end">
+        <div className="relative w-screen left-1/2 -translate-x-1/2 h-24 md:h-32 overflow-hidden flex items-end">
           <motion.div
             animate={{ x: ["-20vw", "110vw"] }}
             transition={{
@@ -52,9 +52,9 @@ export default function App() {
               repeat: Infinity,
               ease: "linear"
             }}
-            className="absolute bottom-6 flex items-end gap-3"
+            className="absolute bottom-4 md:bottom-6 flex items-end gap-2 md:gap-3"
           >
-            <div className="flex gap-2 mb-1">
+            <div className="flex gap-1 md:gap-2 mb-1">
               {[...Array(8)].map((_, i) => (
                 <motion.div
                   key={i}
@@ -69,7 +69,7 @@ export default function App() {
                     delay: i * 0.15,
                     ease: "easeInOut"
                   }}
-                  className="w-1.5 h-1.5 bg-white rounded-full"
+                  className="w-1 h-1 md:w-1.5 md:h-1.5 bg-white rounded-full"
                 />
               ))}
             </div>
@@ -78,21 +78,21 @@ export default function App() {
               transition={{ duration: 0.6, repeat: Infinity, ease: "easeInOut" }}
               src="/assets/images/dino.png"
               alt="Running dinosaur"
-              className="h-8 w-8 object-contain drop-shadow-[0_0_8px_rgba(255,255,255,0.8)]"
+              className="h-6 w-6 md:h-8 md:w-8 object-contain drop-shadow-[0_0_8px_rgba(255,255,255,0.8)]"
             />
           </motion.div>
         </div>
       </Section>
 
       <Section id="team">
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-8">
+        <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 md:mb-16 gap-4 md:gap-8">
           <div>
-            <span className="text-brand-primary font-mono text-sm tracking-widest uppercase mb-2 block">
+            <span className="text-brand-primary font-mono text-xs md:text-sm tracking-widest uppercase mb-2 block">
               Profiles
             </span>
-            <h2 className="text-5xl font-bold">The Core Team.</h2>
+            <h2 className="text-4xl md:text-5xl font-bold">The Core Team.</h2>
           </div>
-          <p className="max-w-md text-neutral-500">
+          <p className="max-w-md text-neutral-500 text-sm md:text-base">
             A diverse group of developers sharing a uniform vision for quality and scalability.
           </p>
         </div>
@@ -100,9 +100,9 @@ export default function App() {
       </Section>
 
       <Section id="stack" className="items-center">
-        <div className="text-center mb-24">
-          <h2 className="text-4xl font-bold mb-4 uppercase tracking-tighter">Technology Stack.</h2>
-          <p className="text-neutral-500 max-w-lg mx-auto">
+        <div className="text-center mb-16 md:mb-24">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 uppercase tracking-tighter">Technology Stack.</h2>
+          <p className="text-neutral-500 max-w-lg mx-auto text-sm md:text-base">
             Leveraging modern tools to build architecture that withstands the test of time.
           </p>
         </div>
@@ -110,20 +110,20 @@ export default function App() {
       </Section>
 
       <Section id="projects">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="relative rounded-2xl overflow-hidden border border-white/10 bg-gradient-to-br from-neutral-800 to-neutral-950 p-2 group shadow-[0_0_30px_rgba(92,207,175,0.1)]"
+            className="relative rounded-2xl overflow-hidden border border-white/10 bg-gradient-to-br from-neutral-800 to-neutral-950 p-2 group shadow-[0_0_30px_rgba(92,207,175,0.1)] w-full max-w-md mx-auto lg:max-w-full"
           >
             <div className="relative aspect-square rounded-lg overflow-hidden bg-gradient-to-tr from-neutral-900 via-neutral-800 to-neutral-900 flex items-center justify-center border border-white/5">
               <div className="absolute inset-0 bg-brand-primary/10 blur-[80px] rounded-full transform scale-75 pointer-events-none" />
               
               <motion.div
                 whileHover={{ scale: 1.05 }}
-                className="w-full h-full flex items-center justify-center p-8 z-10"
+                className="w-full h-full flex items-center justify-center p-4 md:p-8 z-10"
               >
                 <img
                   src="/assets/images-proyects/PublicacionLinekdin.png"
@@ -140,28 +140,28 @@ export default function App() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="space-y-8"
+            className="space-y-6 md:space-y-8 mt-8 lg:mt-0"
           >
             <div>
-              <span className="text-brand-primary font-mono text-sm tracking-widest uppercase mb-3 block">Completed Project</span>
-              <h3 className="text-4xl lg:text-5xl font-bold mb-6 leading-tight">
-                SAMNU: <span className="text-brand-primary">Numerical Methods</span> Solution
+              <span className="text-brand-primary font-mono text-xs md:text-sm tracking-widest uppercase mb-2 md:mb-3 block">Completed Project</span>
+              <h3 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6 leading-tight">
+                SAMNU: <span className="text-brand-primary block sm:inline">Numerical Methods</span> Solution
               </h3>
-              <p className="text-neutral-400 text-lg leading-relaxed mb-6">
+              <p className="text-neutral-400 text-base md:text-lg leading-relaxed mb-6">
                 A fully realized and successfully deployed software suite for engineering and science students. Built to overcome the limits of manual calculation, it features a didactic step-by-step approach to understand the logic behind the results. Developed utilizing Flutter, Dart, and LaTeX.
               </p>
-              <ul className="space-y-3 text-neutral-300 text-base">
+              <ul className="space-y-2 md:space-y-3 text-neutral-300 text-sm md:text-base">
                 <li className="flex items-center gap-3">
-                  <div className="w-2 h-2 bg-brand-primary rounded-full" />
-                  +30 Implemented Algorithms
+                  <div className="w-1.5 h-1.5 md:w-2 md:h-2 bg-brand-primary rounded-full flex-shrink-0" />
+                  <span>+30 Implemented Algorithms</span>
                 </li>
                 <li className="flex items-center gap-3">
-                  <div className="w-2 h-2 bg-brand-primary rounded-full" />
-                  Automatic PDF Reports & Worksheet Generation
+                  <div className="w-1.5 h-1.5 md:w-2 md:h-2 bg-brand-primary rounded-full flex-shrink-0" />
+                  <span>Automatic PDF Reports & Worksheet Generation</span>
                 </li>
                 <li className="flex items-center gap-3">
-                  <div className="w-2 h-2 bg-brand-primary rounded-full" />
-                  Advanced Natural Mathematical Parser
+                  <div className="w-1.5 h-1.5 md:w-2 md:h-2 bg-brand-primary rounded-full flex-shrink-0" />
+                  <span>Advanced Natural Mathematical Parser</span>
                 </li>
               </ul>
             </div>
@@ -170,7 +170,7 @@ export default function App() {
               <a
                 href="https://samnu.netlify.app/"
                 target="_blank"
-                className="inline-flex items-center gap-2 bg-brand-primary text-black px-8 py-4 font-bold rounded-lg hover:bg-neutral-200 transition-all duration-300 text-lg group w-fit"
+                className="inline-flex items-center justify-center gap-2 bg-brand-primary text-black px-6 py-3 md:px-8 md:py-4 font-bold rounded-lg hover:bg-neutral-200 transition-all duration-300 text-base md:text-lg group w-full sm:w-fit"
               >
                 Visit SAMNU
               </a>
@@ -183,9 +183,9 @@ export default function App() {
         <Contact />
       </Section>
 
-      <footer className="py-12 px-6 md:px-24 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-8 text-sm text-neutral-500 font-medium">
-        <p>© 2026 Trebol4Devop. All rights reserved.</p>
-        <div className="flex gap-8">
+      <footer className="py-8 md:py-12 px-6 md:px-24 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6 md:gap-8 text-xs md:text-sm text-neutral-500 font-medium">
+        <p className="text-center md:text-left">© 2026 Trebol4Devop. All rights reserved.</p>
+        <div className="flex flex-wrap justify-center gap-4 md:gap-8">
           <a href="https://github.com/trebol4devop" className="hover:text-white transition-colors">Github</a>
           <a href="https://www.paypal.me/TrebolDevop" className="hover:text-white transition-colors">Support Development</a>
         </div>

@@ -99,6 +99,7 @@ export function Hero() {
         initial={{ opacity: 0, x: -20 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 1 }}
+        className="w-full"
       >
         <span className="text-brand-primary font-mono text-sm tracking-widest uppercase mb-4 block">
           Innovation & Code
@@ -112,15 +113,15 @@ export function Hero() {
           automation, and open-source solutions.
         </p>
         <motion.div 
-          className="flex gap-4"
+          className="flex flex-col sm:flex-row gap-4 w-full sm:w-max"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5 }}
         >
-          <a href="#contact" className="bg-brand-primary text-black px-8 py-4 rounded-sm font-bold hover:bg-neutral-200 transition-all">
+          <a href="#contact" className="bg-brand-primary text-black px-8 py-4 rounded-sm font-bold hover:bg-neutral-200 transition-all text-center w-full sm:w-auto">
             Start Collaboration
           </a>
-          <a href="#team" className="border border-white/10 px-8 py-4 rounded-sm font-bold hover:bg-white/5 transition-all">
+          <a href="#team" className="border border-white/10 px-8 py-4 rounded-sm font-bold hover:bg-white/5 transition-all text-center w-full sm:w-auto">
             Meet the Team
           </a>
         </motion.div>
