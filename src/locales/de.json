@@ -1,0 +1,110 @@
+{
+    "nav": {
+        "about": "Über uns",
+        "team": "Team",
+        "stack": "Stack",
+        "contact": "Kontakt"
+    },
+    "hero": {
+        "subtitle": "Innovation & Code",
+        "title1": "Schaffung",
+        "title2": "Digitaler Skalierbarkeit.",
+        "description": "Unabhängige Entwicklungsgruppe, spezialisiert auf Softwarearchitektur, Automatisierung und Open-Source-Lösungen.",
+        "btn1": "Zusammenarbeit Starten",
+        "btn2": "Team Kennenlernen"
+    },
+    "about": {
+        "title1": "Unabhängiger Fokus auf",
+        "title2": "Exzellenz",
+        "p1": "Entstanden an der Universität von San Carlos de Guatemala (USAC), ist Trébol4Devop ein Kollektiv von Ingenieuren, die sich der Wissenschaft der Softwarebereitstellung widmen.",
+        "p2_1": "Wir glauben an",
+        "p2_2": "sauberen Code",
+        "p2_3": "als einen Wert und an",
+        "p2_4": "Automatisierung",
+        "p2_5": "als Kraftmultiplikator. Unser Fokus reicht von robusten Backend-Systemen bis hin zu intuitiven Frontend-Erlebnissen.",
+        "p3": "Wir legen Wert auf Open-Source-Beiträge und Tools, die Entwicklern helfen, ihre Wirkung zu skalieren, ohne die Komplexität zu erhöhen."
+    },
+    "dino": {
+        "gameOver": "Spiel Vorbei",
+        "restart": "Klicken zum Neustart",
+        "play": "Klicken oder Leertaste zum Spielen"
+    },
+    "team": {
+        "subtitle": "Profile",
+        "title": "Das Kernteam.",
+        "desc": "Eine vielfältige Gruppe von Entwicklern, die eine gemeinsame Vision für Qualität und Skalierbarkeit teilen.",
+        "roles": {
+        "backend": "Backend-Entwickler",
+        "frontend": "Frontend-Entwickler"
+        },
+        "github": "GitHub Profil"
+    },
+    "stack": {
+        "title": "Technologie-Stack.",
+        "desc": "Nutzung moderner Tools zum Aufbau einer Architektur, die dem Test der Zeit standhält.",
+        "levels": {
+        "basic": "Anfänger",
+        "medium": "Mittel",
+        "advanced": "Fortgeschritten"
+        },
+        "descriptions": {
+        "html5": "Wir haben mittlere Kenntnisse in HTML5.",
+        "css3": "Wir haben mittlere Kenntnisse in CSS3.",
+        "javascript": "Wir haben mittlere Kenntnisse in JavaScript.",
+        "react": "Wir haben Grundkenntnisse in React.",
+        "python": "Wir haben mittlere Kenntnisse in Python.",
+        "github": "Wir haben Grundkenntnisse in GitHub.",
+        "git": "Wir haben Grundkenntnisse in Git.",
+        "java": "Wir haben Grundkenntnisse in Java.",
+        "go": "Wir haben Grundkenntnisse in Go.",
+        "c": "Wir haben Grundkenntnisse in C.",
+        "csharp": "Wir haben Grundkenntnisse in C#.",
+        "dart": "Wir haben Grundkenntnisse in Dart.",
+        "linux": "Wir haben Grundkenntnisse in Linux.",
+        "iot": "Wir haben Grundkenntnisse im Internet der Dinge (IoT).",
+        "aws": "Wir haben Grundkenntnisse in AWS.",
+        "obsidian": "Wir haben Grundkenntnisse in Obsidian.",
+        "arm64": "Wir haben Grundkenntnisse in der ARM64-Architektur.",
+        "netlify": "Wir haben Grundkenntnisse in Netlify.",
+        "typescript": "Wir haben Grundkenntnisse in TypeScript.",
+        "nodejs": "Wir haben Grundkenntnisse in Node.js.",
+        "flutter": "Wir haben Grundkenntnisse in Flutter.",
+        "vite": "Wir haben Grundkenntnisse in Vite.",
+        "django": "Wir haben Grundkenntnisse in Django.",
+        "flask": "Wir haben Grundkenntnisse in Flask.",
+        "docker": "Wir haben Grundkenntnisse in Docker.",
+        "grafana": "Wir haben Grundkenntnisse in Grafana.",
+        "mongodb": "Wir haben Grundkenntnisse in MongoDB."
+        }
+    },
+    "projects": {
+        "subtitle": "Abgeschlossenes Projekt",
+        "title1": "SAMNU:",
+        "title2": "Numerische Methoden",
+        "title3": "Lösung",
+        "desc": "Eine vollständig realisierte und erfolgreich eingesetzte Software-Suite.",
+        "feat1": "+30 Implementierte Algorithmen",
+        "feat2": "Automatische Generierung von PDF-Berichten",
+        "feat3": "Erweiterter natürlicher mathematischer Parser",
+        "btn": "SAMNU Besuchen"
+    },
+    "contact": {
+        "title1": "Lassen Sie uns",
+        "title2": "etwas Großartiges bauen.",
+        "desc": "Wir sind offen für Kooperationen bei Open-Source-Projekten, Architekturüberprüfungen und Full-Stack-Entwicklung.",
+        "email_label": "E-Mail",
+        "support_label": "Unterstützen",
+        "support_text": "Kauf uns einen Kaffee",
+        "form_name": "Name",
+        "form_name_ph": "Max Mustermann",
+        "form_email": "E-Mail",
+        "form_msg": "Nachricht",
+        "form_msg_ph": "Ihre Projektvision...",
+        "btn": "Nachricht Senden"
+    },
+    "footer": {
+        "rights": "© 2026 Trebol4Devop. Alle Rechte vorbehalten.",
+        "github": "Github",
+        "support": "Entwicklung Unterstützen"
+    }
+}

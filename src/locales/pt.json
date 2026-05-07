@@ -1,0 +1,110 @@
+{
+    "nav": {
+        "about": "Sobre",
+        "team": "Equipe",
+        "stack": "Stack",
+        "contact": "Contato"
+    },
+    "hero": {
+        "subtitle": "Inovação e Código",
+        "title1": "Criando",
+        "title2": "Escalabilidade Digital.",
+        "description": "Grupo de desenvolvimento independente especializado em arquitetura de software, automação e soluções de código aberto.",
+        "btn1": "Iniciar Colaboração",
+        "btn2": "Conhecer a Equipe"
+    },
+    "about": {
+        "title1": "Foco independente na",
+        "title2": "excelência",
+        "p1": "Nascido da Universidade de San Carlos da Guatemala (USAC), Trébol4Devop é um coletivo de engenheiros dedicados à ciência da entrega de software.",
+        "p2_1": "Acreditamos no",
+        "p2_2": "código limpo",
+        "p2_3": "como um ativo e na",
+        "p2_4": "automação",
+        "p2_5": "como um multiplicador de força. Nosso foco vai desde sistemas backend robustos até experiências frontend intuitivas e acessíveis.",
+        "p3": "Priorizamos contribuições Open Source e ferramentas que ajudam os desenvolvedores a escalar seu impacto sem aumentar a complexidade."
+    },
+    "dino": {
+        "gameOver": "Fim de Jogo",
+        "restart": "Clique para reiniciar",
+        "play": "Clique ou Espaço para Jogar"
+    },
+    "team": {
+        "subtitle": "Perfis",
+        "title": "A Equipe Principal.",
+        "desc": "Um grupo diversificado de desenvolvedores compartilhando uma visão uniforme de qualidade e escalabilidade.",
+        "roles": {
+        "backend": "Desenvolvedor Backend",
+        "frontend": "Desenvolvedor Frontend"
+        },
+        "github": "Perfil do GitHub"
+    },
+    "stack": {
+        "title": "Stack de Tecnologia.",
+        "desc": "Aproveitando ferramentas modernas para construir arquiteturas que resistem ao teste do tempo.",
+        "levels": {
+        "basic": "Básico",
+        "medium": "Médio",
+        "advanced": "Avançado"
+        },
+        "descriptions": {
+        "html5": "Temos um nível médio de proficiência em HTML5.",
+        "css3": "Temos um nível médio de proficiência em CSS3.",
+        "javascript": "Temos um nível médio de proficiência em JavaScript.",
+        "react": "Temos um nível básico de proficiência em React.",
+        "python": "Temos um nível médio de proficiência em Python.",
+        "github": "Temos um nível básico de proficiência em GitHub.",
+        "git": "Temos um nível básico de proficiência em Git.",
+        "java": "Temos um nível básico de proficiência em Java.",
+        "go": "Temos um nível básico de proficiência em Go.",
+        "c": "Temos um nível básico de proficiência em C.",
+        "csharp": "Temos um nível básico de proficiência em C#.",
+        "dart": "Temos um nível básico de proficiência em Dart.",
+        "linux": "Temos um nível básico de proficiência em Linux.",
+        "iot": "Temos um nível básico de proficiência em Internet das Coisas.",
+        "aws": "Temos um nível básico de proficiência em AWS.",
+        "obsidian": "Temos um nível básico de proficiência em Obsidian.",
+        "arm64": "Temos um nível básico de proficiência em arquitetura ARM64.",
+        "netlify": "Temos um nível básico de proficiência em Netlify.",
+        "typescript": "Temos um nível básico de proficiência em TypeScript.",
+        "nodejs": "Temos um nível básico de proficiência em Node.js.",
+        "flutter": "Temos um nível básico de proficiência em Flutter.",
+        "vite": "Temos um nível básico de proficiência em Vite.",
+        "django": "Temos um nível básico de proficiência em Django.",
+        "flask": "Temos um nível básico de proficiência em Flask.",
+        "docker": "Temos um nível básico de proficiência em Docker.",
+        "grafana": "Temos um nível básico de proficiência em Grafana.",
+        "mongodb": "Temos um nível básico de proficiência em MongoDB."
+        }
+    },
+    "projects": {
+        "subtitle": "Projeto Concluído",
+        "title1": "SAMNU:",
+        "title2": "Métodos Numéricos",
+        "title3": "Solução",
+        "desc": "Um conjunto de software totalmente realizado e implantado com sucesso para estudantes de engenharia e ciências.",
+        "feat1": "+30 Algoritmos Implementados",
+        "feat2": "Geração Automática de Relatórios PDF",
+        "feat3": "Analisador Matemático Natural Avançado",
+        "btn": "Visitar SAMNU"
+    },
+    "contact": {
+        "title1": "Vamos construir",
+        "title2": "algo incrível.",
+        "desc": "Estamos abertos a colaborações em projetos open-source, revisões de arquitetura e desenvolvimento full-stack.",
+        "email_label": "E-mail",
+        "support_label": "Apoio",
+        "support_text": "Compre-nos um café",
+        "form_name": "Nome",
+        "form_name_ph": "João Silva",
+        "form_email": "E-mail",
+        "form_msg": "Mensagem",
+        "form_msg_ph": "A visão do seu projeto...",
+        "btn": "Enviar Mensagem"
+    },
+    "footer": {
+        "rights": "© 2026 Trebol4Devop. Todos os direitos reservados.",
+        "github": "Github",
+        "support": "Apoiar o Desenvolvimento"
+    }
+}
