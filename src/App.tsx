@@ -36,8 +36,7 @@ export default function App() {
               {t('about.p1')}
             </p>
             <p>
-              {t('about.p2_1')} <span className="text-black dark:text-white font-medium italic">{t('about.p2_2')}</span> {t('about.p2_3')} <span className="text-black dark:text-white font-medium">{t('about.p2_4')}</span>
-              {t('about.p2_5')}
+              {t('about.p2_1')} <span className="text-black dark:text-white font-medium italic">{t('about.p2_2')}</span> {t('about.p2_3')} <span className="text-black dark:text-white font-medium">{t('about.p2_4')}</span> {t('about.p2_5')}
             </p>
             <p>
               {t('about.p3')}
