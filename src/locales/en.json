@@ -1,0 +1,110 @@
+{
+    "nav": {
+        "about": "About",
+        "team": "Team",
+        "stack": "Stack",
+        "contact": "Contact"
+    },
+    "hero": {
+        "subtitle": "Innovation & Code",
+        "title1": "Crafting",
+        "title2": "Digital Scalability.",
+        "description": "Independent development group specializing in software architecture, automation, and open-source solutions.",
+        "btn1": "Start Collaboration",
+        "btn2": "Meet the Team"
+    },
+    "about": {
+        "title1": "Independent focus on",
+        "title2": "excellence",
+        "p1": "Born from the University of San Carlos de Guatemala (USAC), Trébol4Devop is a collective of engineers dedicated to the science of software delivery.",
+        "p2_1": "We believe in",
+        "p2_2": "clean code",
+        "p2_3": "as an asset and",
+        "p2_4": "automation",
+        "p2_5": "as a force multiplier. Our focus spans from robust backend systems to intuitive, accessible frontend experiences.",
+        "p3": "We prioritize Open Source contributions and tools that help developers scale their impact without increasing complexity."
+    },
+    "dino": {
+        "gameOver": "Game Over",
+        "restart": "Click to restart",
+        "play": "Click or Space to Play"
+    },
+    "team": {
+        "subtitle": "Profiles",
+        "title": "The Core Team.",
+        "desc": "A diverse group of developers sharing a uniform vision for quality and scalability.",
+        "roles": {
+        "backend": "Backend Developer",
+        "frontend": "Frontend Developer"
+        },
+        "github": "GitHub Profile"
+    },
+    "stack": {
+        "title": "Technology Stack.",
+        "desc": "Leveraging modern tools to build architecture that withstands the test of time.",
+        "levels": {
+        "basic": "Basic",
+        "medium": "Medium",
+        "advanced": "Advanced"
+        },
+        "descriptions": {
+        "html5": "We have a medium level of proficiency in HTML5. And we're currently learning more about it. We can create an organized structure for a website with HTML5.",
+        "css3": "We have a medium level of proficiency in CSS3. And we're currently learning more about it.",
+        "javascript": "We have a medium level of proficiency in JavaScript. And we're currently learning more about it.",
+        "react": "We have a basic level of proficiency in React. And we're currently learning more about it.",
+        "python": "We have a medium level of proficiency in Python. And we're currently learning more about it.",
+        "github": "We have a basic level of proficiency in GitHub. And we're currently learning more about it.",
+        "git": "We have a basic level of proficiency in Git. And we're currently learning more about it.",
+        "java": "We have a basic level of proficiency in Java. And we're currently learning more about it.",
+        "go": "We have a basic level of proficiency in Go. And we're currently learning more about it.",
+        "c": "We have a basic level of proficiency in C. And we're currently learning more about it.",
+        "csharp": "We have a basic level of proficiency in C#. And we're currently learning more about it.",
+        "dart": "We have a basic level of proficiency in Dart. And we're currently learning more about it.",
+        "linux": "We have a basic level of proficiency in Linux. And we're currently learning more about it.",
+        "iot": "We have a basic level of proficiency in Internet of Things. And we're currently learning more about it.",
+        "aws": "We have a basic level of proficiency in AWS. And we're currently learning more about it.",
+        "obsidian": "We have a basic level of proficiency in Obsidian. And we're currently learning more about it.",
+        "arm64": "We have a basic level of proficiency in ARM64 architecture. And we're currently learning more about it.",
+        "netlify": "We have a basic level of proficiency in Netlify. And we're currently learning more about it.",
+        "typescript": "We have a basic level of proficiency in TypeScript. And we're currently learning more about it.",
+        "nodejs": "We have a basic level of proficiency in Node.js. And we're currently learning more about it.",
+        "flutter": "We have a basic level of proficiency in Flutter. And we're currently learning more about it.",
+        "vite": "We have a basic level of proficiency in Vite. And we're currently learning more about it.",
+        "django": "We have a basic level of proficiency in Django. And we're currently learning more about it.",
+        "flask": "We have a basic level of proficiency in Flask. And we're currently learning more about it.",
+        "docker": "We have a basic level of proficiency in Docker. And we're currently learning more about it.",
+        "grafana": "We have a basic level of proficiency in Grafana. And we're currently learning more about it.",
+        "mongodb": "We have a basic level of proficiency in MongoDB. And we're currently learning more about it."
+        }
+    },
+    "projects": {
+        "subtitle": "Completed Project",
+        "title1": "SAMNU:",
+        "title2": "Numerical Methods",
+        "title3": "Solution",
+        "desc": "A fully realized and successfully deployed software suite for engineering and science students. Built to overcome the limits of manual calculation, it features a didactic step-by-step approach to understand the logic behind the results. Developed utilizing Flutter, Dart, and LaTeX.",
+        "feat1": "+30 Implemented Algorithms",
+        "feat2": "Automatic PDF Reports & Worksheet Generation",
+        "feat3": "Advanced Natural Mathematical Parser",
+        "btn": "Visit SAMNU"
+    },
+    "contact": {
+        "title1": "Let's build",
+        "title2": "something great.",
+        "desc": "We are open to collaborations on open-source projects, architecture reviews, and full-stack development.",
+        "email_label": "Email",
+        "support_label": "Support",
+        "support_text": "Buy us a coffee",
+        "form_name": "Name",
+        "form_name_ph": "John Doe",
+        "form_email": "Email",
+        "form_msg": "Message",
+        "form_msg_ph": "Your project vision...",
+        "btn": "Send Message"
+    },
+    "footer": {
+        "rights": "© 2026 Trebol4Devop. All rights reserved.",
+        "github": "Github",
+        "support": "Support Development"
+    }
+}

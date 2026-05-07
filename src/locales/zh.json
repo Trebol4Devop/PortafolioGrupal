@@ -1,0 +1,110 @@
+{
+    "nav": {
+        "about": "关于",
+        "team": "团队",
+        "stack": "技术栈",
+        "contact": "联系"
+    },
+    "hero": {
+        "subtitle": "创新与代码",
+        "title1": "打造",
+        "title2": "数字可扩展性。",
+        "description": "专注于软件架构、自动化和开源解决方案的独立开发小组。",
+        "btn1": "开始合作",
+        "btn2": "认识团队"
+    },
+    "about": {
+        "title1": "独立专注于",
+        "title2": "卓越",
+        "p1": "Trébol4Devop 诞生于危地马拉圣卡洛斯大学 (USAC)，是一个致力于软件交付科学的工程师集体。",
+        "p2_1": "我们相信",
+        "p2_2": "整洁的代码",
+        "p2_3": "是一种资产，而",
+        "p2_4": "自动化",
+        "p2_5": "是力量的倍增器。我们的重点涵盖从强大的后端系统到直观、易用的前端体验。",
+        "p3": "我们优先考虑开源贡献和帮助开发者扩大影响力而不会增加复杂性的工具。"
+    },
+    "dino": {
+        "gameOver": "游戏结束",
+        "restart": "点击重新开始",
+        "play": "点击或按空格键开始"
+    },
+    "team": {
+        "subtitle": "个人资料",
+        "title": "核心团队。",
+        "desc": "一个多元化的开发人员团队，对质量和可扩展性有着统一的愿景。",
+        "roles": {
+        "backend": "后端开发",
+        "frontend": "前端开发"
+        },
+        "github": "GitHub 个人资料"
+    },
+    "stack": {
+        "title": "技术栈。",
+        "desc": "利用现代工具构建经得起时间考验的架构。",
+        "levels": {
+        "basic": "基础",
+        "medium": "中等",
+        "advanced": "高级"
+        },
+        "descriptions": {
+        "html5": "我们具有中等水平的 HTML5 熟练度。",
+        "css3": "我们具有中等水平的 CSS3 熟练度。",
+        "javascript": "我们具有中等水平的 JavaScript 熟练度。",
+        "react": "我们具有基础水平的 React 熟练度。",
+        "python": "我们具有中等水平的 Python 熟练度。",
+        "github": "我们具有基础水平的 GitHub 熟练度。",
+        "git": "我们具有基础水平的 Git 熟练度。",
+        "java": "我们具有基础水平的 Java 熟练度。",
+        "go": "我们具有基础水平的 Go 熟练度。",
+        "c": "我们具有基础水平的 C 熟练度。",
+        "csharp": "我们具有基础水平的 C# 熟练度。",
+        "dart": "我们具有基础水平的 Dart 熟练度。",
+        "linux": "我们具有基础水平的 Linux 熟练度。",
+        "iot": "我们具有基础水平的物联网熟练度。",
+        "aws": "我们具有基础水平的 AWS 熟练度。",
+        "obsidian": "我们具有基础水平的 Obsidian 熟练度。",
+        "arm64": "我们具有基础水平的 ARM64 架构熟练度。",
+        "netlify": "我们具有基础水平的 Netlify 熟练度。",
+        "typescript": "我们具有基础水平的 TypeScript 熟练度。",
+        "nodejs": "我们具有基础水平的 Node.js 熟练度。",
+        "flutter": "我们具有基础水平的 Flutter 熟练度。",
+        "vite": "我们具有基础水平的 Vite 熟练度。",
+        "django": "我们具有基础水平的 Django 熟练度。",
+        "flask": "我们具有基础水平的 Flask 熟练度。",
+        "docker": "我们具有基础水平的 Docker 熟练度。",
+        "grafana": "我们具有基础水平的 Grafana 熟练度。",
+        "mongodb": "我们具有基础水平的 MongoDB 熟练度。"
+        }
+    },
+    "projects": {
+        "subtitle": "已完成项目",
+        "title1": "SAMNU:",
+        "title2": "数值方法",
+        "title3": "解决方案",
+        "desc": "为工程和理科学生全面实现并成功部署的软件套件。",
+        "feat1": "+30 种实现的算法",
+        "feat2": "自动生成 PDF 报告",
+        "feat3": "高级自然数学解析器",
+        "btn": "访问 SAMNU"
+    },
+    "contact": {
+        "title1": "让我们建立",
+        "title2": "伟大的事物。",
+        "desc": "我们对开源项目、架构审查和全栈开发的合作持开放态度。",
+        "email_label": "电子邮件",
+        "support_label": "支持",
+        "support_text": "请我们喝杯咖啡",
+        "form_name": "姓名",
+        "form_name_ph": "张三",
+        "form_email": "电子邮件",
+        "form_msg": "消息",
+        "form_msg_ph": "您的项目愿景...",
+        "btn": "发送消息"
+    },
+    "footer": {
+        "rights": "© 2026 Trebol4Devop。保留所有权利。",
+        "github": "Github",
+        "support": "支持开发"
+    }
+}

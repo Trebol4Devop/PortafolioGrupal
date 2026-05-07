@@ -1,0 +1,110 @@
+{
+    "nav": {
+        "about": "Nosotros",
+        "team": "Equipo",
+        "stack": "Stack",
+        "contact": "Contacto"
+    },
+    "hero": {
+        "subtitle": "Innovación y Código",
+        "title1": "Creando",
+        "title2": "Escalabilidad Digital.",
+        "description": "Grupo de desarrollo independiente especializado en arquitectura de software, automatización y soluciones de código abierto.",
+        "btn1": "Iniciar Colaboración",
+        "btn2": "Conocer al Equipo"
+    },
+    "about": {
+        "title1": "Enfoque independiente en la",
+        "title2": "excelencia",
+        "p1": "Nacidos de la Universidad de San Carlos de Guatemala (USAC), Trébol4Devop es un colectivo de ingenieros dedicados a la ciencia de la entrega de software.",
+        "p2_1": "Creemos en el",
+        "p2_2": "código limpio",
+        "p2_3": "como un activo y en la",
+        "p2_4": "automatización",
+        "p2_5": "como un multiplicador de fuerza. Nuestro enfoque abarca desde sistemas backend robustos hasta experiencias frontend intuitivas y accesibles.",
+        "p3": "Priorizamos las contribuciones al Open Source y las herramientas que ayudan a los desarrolladores a escalar su impacto sin aumentar la complejidad."
+    },
+    "dino": {
+        "gameOver": "Fin del Juego",
+        "restart": "Clic para reiniciar",
+        "play": "Clic o Espacio para Jugar"
+    },
+    "team": {
+        "subtitle": "Perfiles",
+        "title": "El Equipo Central.",
+        "desc": "Un grupo diverso de desarrolladores que comparten una visión uniforme de calidad y escalabilidad.",
+        "roles": {
+        "backend": "Desarrollador Backend",
+        "frontend": "Desarrollador Frontend"
+        },
+        "github": "Perfil de GitHub"
+    },
+    "stack": {
+        "title": "Stack Tecnológico.",
+        "desc": "Aprovechando herramientas modernas para construir arquitecturas que resisten el paso del tiempo.",
+        "levels": {
+        "basic": "Básico",
+        "medium": "Medio",
+        "advanced": "Avanzado"
+        },
+        "descriptions": {
+        "html5": "Tenemos un nivel medio de competencia en HTML5. Actualmente seguimos aprendiendo más. Podemos crear una estructura organizada para un sitio web.",
+        "css3": "Tenemos un nivel medio de competencia en CSS3. Y actualmente estamos aprendiendo más.",
+        "javascript": "Tenemos un nivel medio de competencia en JavaScript. Y actualmente estamos aprendiendo más.",
+        "react": "Tenemos un nivel básico de competencia en React. Y actualmente estamos aprendiendo más.",
+        "python": "Tenemos un nivel medio de competencia en Python. Y actualmente estamos aprendiendo más.",
+        "github": "Tenemos un nivel básico de competencia en GitHub. Y actualmente estamos aprendiendo más.",
+        "git": "Tenemos un nivel básico de competencia en Git. Y actualmente estamos aprendiendo más.",
+        "java": "Tenemos un nivel básico de competencia en Java. Y actualmente estamos aprendiendo más.",
+        "go": "Tenemos un nivel básico de competencia en Go. Y actualmente estamos aprendiendo más.",
+        "c": "Tenemos un nivel básico de competencia en C. Y actualmente estamos aprendiendo más.",
+        "csharp": "Tenemos un nivel básico de competencia en C#. Y actualmente estamos aprendiendo más.",
+        "dart": "Tenemos un nivel básico de competencia en Dart. Y actualmente estamos aprendiendo más.",
+        "linux": "Tenemos un nivel básico de competencia en Linux. Y actualmente estamos aprendiendo más.",
+        "iot": "Tenemos un nivel básico de competencia en Internet de las Cosas (IoT). Y actualmente estamos aprendiendo más.",
+        "aws": "Tenemos un nivel básico de competencia en AWS. Y actualmente estamos aprendiendo más.",
+        "obsidian": "Tenemos un nivel básico de competencia en Obsidian. Y actualmente estamos aprendiendo más.",
+        "arm64": "Tenemos un nivel básico de competencia en arquitectura ARM64. Y actualmente estamos aprendiendo más.",
+        "netlify": "Tenemos un nivel básico de competencia en Netlify. Y actualmente estamos aprendiendo más.",
+        "typescript": "Tenemos un nivel básico de competencia en TypeScript. Y actualmente estamos aprendiendo más.",
+        "nodejs": "Tenemos un nivel básico de competencia en Node.js. Y actualmente estamos aprendiendo más.",
+        "flutter": "Tenemos un nivel básico de competencia en Flutter. Y actualmente estamos aprendiendo más.",
+        "vite": "Tenemos un nivel básico de competencia en Vite. Y actualmente estamos aprendiendo más.",
+        "django": "Tenemos un nivel básico de competencia en Django. Y actualmente estamos aprendiendo más.",
+        "flask": "Tenemos un nivel básico de competencia en Flask. Y actualmente estamos aprendiendo más.",
+        "docker": "Tenemos un nivel básico de competencia en Docker. Y actualmente estamos aprendiendo más.",
+        "grafana": "Tenemos un nivel básico de competencia en Grafana. Y actualmente estamos aprendiendo más.",
+        "mongodb": "Tenemos un nivel básico de competencia en MongoDB. Y actualmente estamos aprendiendo más."
+        }
+    },
+    "projects": {
+        "subtitle": "Proyecto Completado",
+        "title1": "SAMNU:",
+        "title2": "Métodos Numéricos",
+        "title3": "Solución",
+        "desc": "Una suite de software totalmente realizada e implementada con éxito para estudiantes de ingeniería y ciencias. Construida para superar los límites del cálculo manual, cuenta con un enfoque didáctico paso a paso para comprender la lógica detrás de los resultados. Desarrollado utilizando Flutter, Dart y LaTeX.",
+        "feat1": "+30 Algoritmos Implementados",
+        "feat2": "Generación Automática de Reportes en PDF",
+        "feat3": "Analizador Matemático Natural Avanzado",
+        "btn": "Visitar SAMNU"
+    },
+    "contact": {
+        "title1": "Construyamos",
+        "title2": "algo genial.",
+        "desc": "Estamos abiertos a colaboraciones en proyectos de código abierto, revisiones de arquitectura y desarrollo full-stack.",
+        "email_label": "Correo",
+        "support_label": "Soporte",
+        "support_text": "Cómpranos un café",
+        "form_name": "Nombre",
+        "form_name_ph": "Juan Pérez",
+        "form_email": "Correo",
+        "form_msg": "Mensaje",
+        "form_msg_ph": "La visión de tu proyecto...",
+        "btn": "Enviar Mensaje"
+    },
+    "footer": {
+        "rights": "© 2026 Trebol4Devop. Todos los derechos reservados.",
+        "github": "Github",
+        "support": "Apoyar el Desarrollo"
+    }
+}
