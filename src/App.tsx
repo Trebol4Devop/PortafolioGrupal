@@ -36,8 +36,7 @@ export default function App() {
               {t('about.p1')}
             </p>
             <p>
-              {t('about.p2_1')} <span className="text-black dark:text-white font-medium italic">{t('about.p2_2')}</span> {t('about.p2_3')} <span className="text-black dark:text-white font-medium">{t('about.p2_4')}</span>
-              {t('about.p2_5')}
+              {t('about.p2_1')} <span className="text-black dark:text-white font-medium italic">{t('about.p2_2')}</span> {t('about.p2_3')} <span className="text-black dark:text-white font-medium">{t('about.p2_4')}</span> {t('about.p2_5')}
             </p>
             <p>
               {t('about.p3')}
@@ -74,72 +73,142 @@ export default function App() {
       </Section>
 
       <Section id="projects">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
-          <motion.div
-            initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-            className="relative rounded-2xl overflow-hidden border border-black/10 dark:border-white/10 bg-gradient-to-br from-neutral-200 to-neutral-300 dark:from-neutral-800 dark:to-neutral-950 p-2 group shadow-[0_0_30px_rgba(92,207,175,0.1)] w-full max-w-sm sm:max-w-md mx-auto lg:max-w-full"
-          >
-            <div className="relative aspect-square rounded-lg overflow-hidden bg-gradient-to-tr from-white via-neutral-100 to-white dark:from-neutral-900 dark:via-neutral-800 dark:to-neutral-900 flex items-center justify-center border border-black/5 dark:border-white/5">
-              <div className="absolute inset-0 bg-brand-primary/10 blur-[80px] rounded-full transform scale-75 pointer-events-none" />
-              
-              <motion.div
-                whileHover={{ scale: 1.05 }}
-                className="w-full h-full flex items-center justify-center p-4 sm:p-6 md:p-8 z-10"
-              >
-                <img
-                  src="/assets/images-proyects/PublicacionLinekdin.png"
-                  alt="SAMNU Project Showcase"
-                  className="w-full h-full object-contain transition-all duration-300 drop-shadow-[0_10px_20px_rgba(0,0,0,0.2)] dark:drop-shadow-[0_20px_30px_rgba(0,0,0,0.8)]"
-                />
-              </motion.div>
-              <div className="absolute inset-0 bg-gradient-to-t from-brand-primary/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity z-20 pointer-events-none" />
-            </div>
-          </motion.div>
+        <div className="flex flex-col gap-24 md:gap-32">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
+            <motion.div
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8 }}
+              className="relative rounded-2xl overflow-hidden border border-black/10 dark:border-white/10 bg-gradient-to-br from-neutral-200 to-neutral-300 dark:from-neutral-800 dark:to-neutral-950 p-2 group shadow-[0_0_30px_rgba(92,207,175,0.1)] w-full max-w-sm sm:max-w-md mx-auto lg:max-w-full"
+            >
+              <div className="relative aspect-square rounded-lg overflow-hidden bg-gradient-to-tr from-white via-neutral-100 to-white dark:from-neutral-900 dark:via-neutral-800 dark:to-neutral-900 flex items-center justify-center border border-black/5 dark:border-white/5">
+                <div className="absolute inset-0 bg-brand-primary/10 blur-[80px] rounded-full transform scale-75 pointer-events-none" />
+                
+                <motion.div
+                  whileHover={{ scale: 1.05 }}
+                  className="w-full h-full flex items-center justify-center p-4 sm:p-6 md:p-8 z-10"
+                >
+                  <img
+                    src="/assets/images-proyects/PublicacionLinekdin.png"
+                    alt="SAMNU Project Showcase"
+                    className="w-full h-full object-contain transition-all duration-300 drop-shadow-[0_10px_20px_rgba(0,0,0,0.2)] dark:drop-shadow-[0_20px_30px_rgba(0,0,0,0.8)]"
+                  />
+                </motion.div>
+                <div className="absolute inset-0 bg-gradient-to-t from-brand-primary/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity z-20 pointer-events-none" />
+              </div>
+            </motion.div>
 
-          <motion.div
-            initial={{ opacity: 0, x: 20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="space-y-4 sm:space-y-6 md:space-y-8 mt-4 lg:mt-0"
-          >
-            <div>
-              <span className="text-brand-primary font-mono text-[10px] sm:text-xs md:text-sm tracking-widest uppercase mb-2 md:mb-3 block">{t('projects.subtitle')}</span>
-              <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6 leading-tight text-neutral-900 dark:text-white">
-                {t('projects.title1')} <span className="text-brand-primary block xl:inline">{t('projects.title2')}</span> {t('projects.title3')}
-              </h3>
-              <p className="text-neutral-600 dark:text-neutral-400 text-sm sm:text-base md:text-lg leading-relaxed mb-6">
-                {t('projects.desc')}
-              </p>
-              <ul className="space-y-2 md:space-y-3 text-neutral-700 dark:text-neutral-300 text-xs sm:text-sm md:text-base">
-                <li className="flex items-center gap-3">
-                  <div className="w-1.5 h-1.5 md:w-2 md:h-2 bg-brand-primary rounded-full flex-shrink-0" />
-                  <span>{t('projects.feat1')}</span>
-                </li>
-                <li className="flex items-center gap-3">
-                  <div className="w-1.5 h-1.5 md:w-2 md:h-2 bg-brand-primary rounded-full flex-shrink-0" />
-                  <span>{t('projects.feat2')}</span>
-                </li>
-                <li className="flex items-center gap-3">
-                  <div className="w-1.5 h-1.5 md:w-2 md:h-2 bg-brand-primary rounded-full flex-shrink-0" />
-                  <span>{t('projects.feat3')}</span>
-                </li>
-              </ul>
-            </div>
+            <motion.div
+              initial={{ opacity: 0, x: 20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              className="space-y-4 sm:space-y-6 md:space-y-8 mt-4 lg:mt-0"
+            >
+              <div>
+                <span className="text-brand-primary font-mono text-[10px] sm:text-xs md:text-sm tracking-widest uppercase mb-2 md:mb-3 block">{t('projects.samnu_subtitle')}</span>
+                <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6 leading-tight text-neutral-900 dark:text-white">
+                  {t('projects.samnu_title1')} <span className="text-brand-primary block xl:inline">{t('projects.samnu_title2')}</span> {t('projects.samnu_title3')}
+                </h3>
+                <p className="text-neutral-600 dark:text-neutral-400 text-sm sm:text-base md:text-lg leading-relaxed mb-6">
+                  {t('projects.samnu_desc')}
+                </p>
+                <ul className="space-y-2 md:space-y-3 text-neutral-700 dark:text-neutral-300 text-xs sm:text-sm md:text-base">
+                  <li className="flex items-center gap-3">
+                    <div className="w-1.5 h-1.5 md:w-2 md:h-2 bg-brand-primary rounded-full flex-shrink-0" />
+                    <span>{t('projects.samnu_feat1')}</span>
+                  </li>
+                  <li className="flex items-center gap-3">
+                    <div className="w-1.5 h-1.5 md:w-2 md:h-2 bg-brand-primary rounded-full flex-shrink-0" />
+                    <span>{t('projects.samnu_feat2')}</span>
+                  </li>
+                  <li className="flex items-center gap-3">
+                    <div className="w-1.5 h-1.5 md:w-2 md:h-2 bg-brand-primary rounded-full flex-shrink-0" />
+                    <span>{t('projects.samnu_feat3')}</span>
+                  </li>
+                </ul>
+              </div>
 
-            <div className="flex gap-4">
-              <a
-                href="https://samnu.netlify.app/"
-                target="_blank"
-                className="inline-flex items-center justify-center gap-2 bg-brand-primary text-black px-6 py-3 md:px-8 md:py-4 font-bold rounded-lg hover:bg-brand-primary/80 transition-all duration-300 text-sm sm:text-base md:text-lg group w-full sm:w-fit"
-              >
-                {t('projects.btn')}
-              </a>
-            </div>
-          </motion.div>
+              <div className="flex gap-4">
+                <a
+                  href="https://samnu.netlify.app/"
+                  target="_blank"
+                  className="inline-flex items-center justify-center gap-2 bg-brand-primary text-black px-6 py-3 md:px-8 md:py-4 font-bold rounded-lg hover:bg-brand-primary/80 transition-all duration-300 text-sm sm:text-base md:text-lg group w-full sm:w-fit"
+                >
+                  {t('projects.samnu_btn')}
+                </a>
+              </div>
+            </motion.div>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
+            <motion.div
+              initial={{ opacity: 0, x: 20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8 }}
+              className="relative rounded-2xl overflow-hidden border border-black/10 dark:border-white/10 bg-gradient-to-br from-neutral-200 to-neutral-300 dark:from-neutral-800 dark:to-neutral-950 p-2 group shadow-[0_0_30px_rgba(92,207,175,0.1)] w-full max-w-sm sm:max-w-md mx-auto lg:max-w-full lg:order-2"
+            >
+              <div className="relative aspect-square rounded-lg overflow-hidden bg-gradient-to-tr from-white via-neutral-100 to-white dark:from-neutral-900 dark:via-neutral-800 dark:to-neutral-900 flex items-center justify-center border border-black/5 dark:border-white/5">
+                <div className="absolute inset-0 bg-brand-primary/10 blur-[80px] rounded-full transform scale-75 pointer-events-none" />
+                
+                <motion.div
+                  whileHover={{ scale: 1.05 }}
+                  className="w-full h-full flex items-center justify-center p-4 sm:p-6 md:p-8 z-10"
+                >
+                  <img
+                    src="/assets/images-proyects/PemtreeImage.png"
+                    alt="PEMTREE Project Showcase"
+                    className="w-full h-full object-contain transition-all duration-300 drop-shadow-[0_10px_20px_rgba(0,0,0,0.2)] dark:drop-shadow-[0_20px_30px_rgba(0,0,0,0.8)]"
+                  />
+                </motion.div>
+                <div className="absolute inset-0 bg-gradient-to-t from-brand-primary/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity z-20 pointer-events-none" />
+              </div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              className="space-y-4 sm:space-y-6 md:space-y-8 mt-4 lg:mt-0 lg:order-1"
+            >
+              <div>
+                <span className="text-brand-primary font-mono text-[10px] sm:text-xs md:text-sm tracking-widest uppercase mb-2 md:mb-3 block">{t('projects.pemtree_subtitle')}</span>
+                <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6 leading-tight text-neutral-900 dark:text-white">
+                  {t('projects.pemtree_title1')} <span className="text-brand-primary block xl:inline">{t('projects.pemtree_title2')}</span> {t('projects.pemtree_title3')}
+                </h3>
+                <p className="text-neutral-600 dark:text-neutral-400 text-sm sm:text-base md:text-lg leading-relaxed mb-6">
+                  {t('projects.pemtree_desc')}
+                </p>
+                <ul className="space-y-2 md:space-y-3 text-neutral-700 dark:text-neutral-300 text-xs sm:text-sm md:text-base">
+                  <li className="flex items-center gap-3">
+                    <div className="w-1.5 h-1.5 md:w-2 md:h-2 bg-brand-primary rounded-full flex-shrink-0" />
+                    <span>{t('projects.pemtree_feat1')}</span>
+                  </li>
+                  <li className="flex items-center gap-3">
+                    <div className="w-1.5 h-1.5 md:w-2 md:h-2 bg-brand-primary rounded-full flex-shrink-0" />
+                    <span>{t('projects.pemtree_feat2')}</span>
+                  </li>
+                  <li className="flex items-center gap-3">
+                    <div className="w-1.5 h-1.5 md:w-2 md:h-2 bg-brand-primary rounded-full flex-shrink-0" />
+                    <span>{t('projects.pemtree_feat3')}</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="flex gap-4">
+                <a
+                  href="https://pemtree.netlify.app/"
+                  target="_blank"
+                  className="inline-flex items-center justify-center gap-2 bg-brand-primary text-black px-6 py-3 md:px-8 md:py-4 font-bold rounded-lg hover:bg-brand-primary/80 transition-all duration-300 text-sm sm:text-base md:text-lg group w-full sm:w-fit"
+                >
+                  {t('projects.pemtree_btn')}
+                </a>
+              </div>
+            </motion.div>
+          </div>
         </div>
       </Section>
 
