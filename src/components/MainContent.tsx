@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import { Github, Mail, Coffee, ExternalLink, X, Moon, Sun, Languages, Menu } from "lucide-react";
+import { Github, Mail, Coffee, ExternalLink, X, Moon, Sun, Languages, Menu, Linkedin } from "lucide-react";
 import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 
@@ -396,6 +396,15 @@ export function Contact() {
             <div className="overflow-hidden">
               <span className="block text-[10px] sm:text-xs uppercase text-neutral-500 font-bold tracking-wider">{t('contact.email_label')}</span>
               <a href="mailto:trebol4devop@proton.me" className="text-sm sm:text-lg text-neutral-900 dark:text-white truncate block">trebol4devop@proton.me</a>
+            </div>
+          </div>
+          <div className="flex items-center gap-3 sm:gap-4">
+            <div className="w-10 h-10 sm:w-12 sm:h-12 bg-neutral-100 dark:bg-neutral-900 flex justify-center items-center rounded-sm flex-shrink-0">
+              <Linkedin size={18} className="text-brand-primary sm:w-5 sm:h-5" />
+            </div>
+            <div className="overflow-hidden">
+              <span className="block text-[10px] sm:text-xs uppercase text-neutral-500 font-bold tracking-wider">{t('contact.linkedin_label')}</span>
+              <a href="https://www.linkedin.com/company/trebol4devop/" target="_blank" rel="noopener noreferrer" className="text-sm sm:text-lg text-neutral-900 dark:text-white truncate block">{t('contact.linkedin_text')}</a>
             </div>
           </div>
           <div className="flex items-center gap-3 sm:gap-4">
